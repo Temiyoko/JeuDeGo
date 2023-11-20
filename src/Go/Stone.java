@@ -1,4 +1,4 @@
-package jeu;
+package Go;
 
 
 public class Stone {

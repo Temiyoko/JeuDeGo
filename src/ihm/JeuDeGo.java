@@ -1,4 +1,4 @@
-package jeu;
+package ihm;
 
 import java.util.Scanner;
 
@@ -35,7 +35,9 @@ public class JeuDeGo {
             }
 
             // The board size is changed.
-            // The board configuration, number of captured stones, and move history become arbitrary
+            // The positions of the stones on the board will be reset to an arbitrary state
+            // The count of stones captured by each player will be reset to an arbitrary state.
+            // The history of moves made in the game will be reset to an arbitrary state.
             System.out.println("=");
         }
         catch (ArrayIndexOutOfBoundsException e){
