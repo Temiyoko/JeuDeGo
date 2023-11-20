@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d91ec27-cc2e-442d-ad90-c0d4a67c50e3" name="Changes" comment="Coded boardsize">
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jeu/Colors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/jeu/Stone.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jeu/JeuDeGo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jeu/JeuDeGo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +21,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2YRcAbZcYvHZ3GRjuiwnYpJEv0b" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
