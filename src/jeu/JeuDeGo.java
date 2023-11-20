@@ -26,8 +26,8 @@ public class JeuDeGo {
 
     private static void boardsize(String input) {
         try {
-            String[] parts = input.split("\\s+");
-            int nb = Integer.parseInt(parts[1]);
+            String[] words = input.split("\\s+");
+            int nb = Integer.parseInt(words[1]);
 
             if(nb < MINSIZE || nb > MAXSIZE){
                 System.out.println("? unacceptable size");
