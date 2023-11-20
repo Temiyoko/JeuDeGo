@@ -1,10 +1,14 @@
 package ihm;
 
+import Go.Goban;
+
 import java.util.Scanner;
 
 public class JeuDeGo {
     private static final int MINSIZE = 1, MAXSIZE = 19;
+    private static Goban goban;
     public static void main(String[] args) {
+        goban = new Goban();
         Scanner sc = new Scanner(System.in);
 
         while(sc.hasNextLine()) {
@@ -34,8 +38,7 @@ public class JeuDeGo {
                 return;
             }
 
-            // The board size is changed.
-            // The positions of the stones on the board will be reset to an arbitrary state
+            goban = new Goban(nb); // The board size is changed and attributes are reset
             // The count of stones captured by each player will be reset to an arbitrary state.
             // The history of moves made in the game will be reset to an arbitrary state.
             System.out.println("=");
