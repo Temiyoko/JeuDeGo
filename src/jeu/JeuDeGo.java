@@ -40,11 +40,9 @@ public class JeuDeGo {
         }
         catch (ArrayIndexOutOfBoundsException e){
             System.out.println("? boardsize not an integer");
-            return;
         }
         catch (NumberFormatException e) {
             System.out.println("? unknown command");
-            return;
         }
     }
 
