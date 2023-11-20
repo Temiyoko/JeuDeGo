@@ -1,4 +1,4 @@
-package Go;
+package go;
 
 public class Goban {
     private static final int DEFAULT_SIZE = 19;
