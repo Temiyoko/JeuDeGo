@@ -1,0 +1,139 @@
+Index: src/ihm/JeuDeGo.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package ihm;\r\n\r\nimport Go.Goban;\r\n\r\nimport java.util.Scanner;\r\n\r\npublic class JeuDeGo {\r\n    private static final int MINSIZE = 1, MAXSIZE = 19;\r\n    private static Goban goban;\r\n    public static void main(String[] args) {\r\n        goban = new Goban();\r\n        Scanner sc = new Scanner(System.in);\r\n\r\n        while(sc.hasNextLine()) {\r\n            String saisie = sc.nextLine().trim();\r\n\r\n            if (saisie.equals(\"quit\")){\r\n                System.out.println(\"=\");\r\n                break;\r\n            }\r\n            else if (saisie.startsWith(\"boardsize\")) {\r\n                boardsize(saisie);\r\n            }\r\n            else{\r\n                System.out.println(\"? unknown command\");\r\n            }\r\n        }\r\n        sc.close();\r\n    }\r\n\r\n    private static void boardsize(String input) {\r\n        try {\r\n            String[] words = input.split(\"\\\\s+\");\r\n            int nb = Integer.parseInt(words[1]);\r\n\r\n            if(nb < MINSIZE || nb > MAXSIZE){\r\n                System.out.println(\"? unacceptable size\");\r\n                return;\r\n            }\r\n\r\n            goban = new Goban(nb); // The board size is changed and attributes are reset\r\n            // The count of stones captured by each player will be reset to an arbitrary state.\r\n            // The history of moves made in the game will be reset to an arbitrary state.\r\n            System.out.println(\"=\");\r\n        }\r\n        catch (ArrayIndexOutOfBoundsException e){\r\n            System.out.println(\"? boardsize not an integer\");\r\n        }\r\n        catch (NumberFormatException e) {\r\n            System.out.println(\"? unknown command\");\r\n        }\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/ihm/JeuDeGo.java b/src/ihm/JeuDeGo.java
+--- a/src/ihm/JeuDeGo.java	(revision 9f591249eb2057b099247564436727e7862e805b)
++++ b/src/ihm/JeuDeGo.java	(date 1700516933832)
+@@ -1,6 +1,6 @@
+ package ihm;
+ 
+-import Go.Goban;
++import go.Goban;
+ 
+ import java.util.Scanner;
+ 
+Index: src/Go/Goban.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Go;\r\n\r\npublic class Goban {\r\n    private static final int DEFAULT_SIZE = 19;\r\n    private int size;\r\n    private Stone[][] stones;\r\n\r\n    public Goban(){\r\n        this.size = DEFAULT_SIZE;\r\n        this.stones = new Stone[DEFAULT_SIZE][DEFAULT_SIZE];\r\n    }\r\n\r\n    public Goban(int n){\r\n        this.size = n;\r\n        this.stones = new Stone[n][n];\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Go/Goban.java b/src/go/Goban.java
+rename from src/Go/Goban.java
+rename to src/go/Goban.java
+--- a/src/Go/Goban.java	(revision 9f591249eb2057b099247564436727e7862e805b)
++++ b/src/go/Goban.java	(date 1700516933839)
+@@ -1,4 +1,4 @@
+-package Go;
++package go;
+ 
+ public class Goban {
+     private static final int DEFAULT_SIZE = 19;
+Index: README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># Projet Go - R3.04\r\nCe projet consiste à développer et tester un programme permettant de jouer une partie de go.\r\n\r\nEquipe, groupe 203 : \r\n- Julia LEVEQUE\r\n- Paulo MARTINS\r\n- Marion PARMENTIER\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/README.md b/README.md
+--- a/README.md	(revision 9f591249eb2057b099247564436727e7862e805b)
++++ b/README.md	(date 1700516933856)
+@@ -1,4 +1,4 @@
+-# Projet Go - R3.04
++# Projet go - R3.04
+ Ce projet consiste à développer et tester un programme permettant de jouer une partie de go.
+ 
+ Equipe, groupe 203 : 
+Index: src/Go/Stone.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Go;\r\n\r\n\r\npublic class Stone {\r\n    private Colors color;\r\n    private int[] position;\r\n\r\n    public Stone(Colors c){\r\n        this.color = c;\r\n        this.position = new int[]{-1, -1};\r\n    }\r\n\r\n    public Stone(Colors c, int[] p){\r\n        this.color = c;\r\n        this.position = p;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Go/Stone.java b/src/go/Stone.java
+rename from src/Go/Stone.java
+rename to src/go/Stone.java
+--- a/src/Go/Stone.java	(revision 9f591249eb2057b099247564436727e7862e805b)
++++ b/src/go/Stone.java	(date 1700516933863)
+@@ -1,4 +1,4 @@
+-package Go;
++package go;
+ 
+ 
+ public class Stone {
+Index: src/Go/Colors.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Go;\r\n\r\npublic enum Colors {\r\n    BLACK, WHITE\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Go/Colors.java b/src/go/Colors.java
+rename from src/Go/Colors.java
+rename to src/go/Colors.java
+--- a/src/Go/Colors.java	(revision 9f591249eb2057b099247564436727e7862e805b)
++++ b/src/go/Colors.java	(date 1700516933828)
+@@ -1,4 +1,4 @@
+-package Go;
++package go;
+ 
+ public enum Colors {
+     BLACK, WHITE
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"3d91ec27-cc2e-442d-ad90-c0d4a67c50e3\" name=\"Changes\" comment=\"Updated structure\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_11_2023_22_00__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_11_2023_22_00__Changes_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/ihm/JeuDeGo.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/ihm/JeuDeGo.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"ProjectErrors\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2YRcAbZcYvHZ3GRjuiwnYpJEv0b\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n    <option name=\"showMembers\" value=\"true\" />\r\n    <option name=\"showVisibilityIcons\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;F:/Documents/Cours/SAé/Graphes&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"3d91ec27-cc2e-442d-ad90-c0d4a67c50e3\" name=\"Changes\" comment=\"\" />\r\n      <created>1700491693659</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1700491693659</updated>\r\n      <workItem from=\"1700491695388\" duration=\"2789000\" />\r\n      <workItem from=\"1700513269062\" duration=\"308000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Initial commit\">\r\n      <created>1700491729525</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700491729525</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Initial commit\">\r\n      <created>1700491740280</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700491740280</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Coded boardsize\">\r\n      <created>1700501101664</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700501101664</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Coded boardsize\">\r\n      <created>1700501119814</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700501119814</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"5\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Initial commit\" />\r\n    <MESSAGE value=\"Coded boardsize\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Coded boardsize\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 9f591249eb2057b099247564436727e7862e805b)
++++ b/.idea/workspace.xml	(date 1700516934277)
+@@ -4,9 +4,12 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="3d91ec27-cc2e-442d-ad90-c0d4a67c50e3" name="Changes" comment="Updated structure">
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_11_2023_22_00__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_11_2023_22_00__Changes_.xml" afterDir="false" />
++    <list default="true" id="3d91ec27-cc2e-442d-ad90-c0d4a67c50e3" name="Changes" comment="Updated boardsize">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Go/Colors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/go/Colors.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Go/Goban.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/go/Goban.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Go/Stone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/go/Stone.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/ihm/JeuDeGo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ihm/JeuDeGo.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -85,7 +88,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1700501119814</updated>
+     </task>
+-    <option name="localTasksCounter" value="5" />
++    <task id="LOCAL-00005" summary="Updated boardsize">
++      <created>1700515205063</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1700515205063</updated>
++    </task>
++    <option name="localTasksCounter" value="6" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -94,6 +104,7 @@
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Initial commit" />
+     <MESSAGE value="Coded boardsize" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Coded boardsize" />
++    <MESSAGE value="Updated boardsize" />
++    <option name="LAST_COMMIT_MESSAGE" value="Updated boardsize" />
+   </component>
+ </project>
+\ No newline at end of file
