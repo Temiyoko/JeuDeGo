@@ -1,6 +1,6 @@
 package ihm;
 
-import go.Colors;
+import go.Stones;
 import go.Goban;
 import go.Player;
 
@@ -17,8 +17,8 @@ public class JeuDeGo {
 
     public static void main(String[] args) {
         goban = new Goban();
-        blackP = new Player(Colors.BLACK);
-        whiteP = new Player(Colors.WHITE);
+        blackP = new Player(Stones.BLACK);
+        whiteP = new Player(Stones.WHITE);
         history = new HashMap<>();
 
         Scanner sc = new Scanner(System.in);
@@ -32,6 +32,9 @@ public class JeuDeGo {
             }
             else if (saisie.startsWith("boardsize")) {
                 boardsize(saisie);
+            }
+            else if (saisie.equals("showboard")){
+                System.out.println(goban.show());
             }
             else{
                 System.out.println("? unknown command");

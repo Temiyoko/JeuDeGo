@@ -1,11 +1,11 @@
 package go;
 
 public class Player {
-    private Colors color;
+    private Stones stoneColor;
     private int score;
 
-    public Player(Colors c){
-        this.color = c;
+    public Player(Stones c){
+        this.stoneColor = c;
         this.score = 0;
     }
 
