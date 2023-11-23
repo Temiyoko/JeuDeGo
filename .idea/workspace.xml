@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d91ec27-cc2e-442d-ad90-c0d4a67c50e3" name="Changes" comment="Updated structure">
+    <list default="true" id="3d91ec27-cc2e-442d-ad90-c0d4a67c50e3" name="Changes" comment="Updated structure and coded showboard">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/go/Colors.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/go/Goban.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JeuDeGo/go/Goban.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/go/Stone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/go/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JeuDeGo/go/Player.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/ihm/JeuDeGo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JeuDeGo/ihm/JeuDeGo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/go/Colors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/go/Stones.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/go/Goban.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/go/Goban.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/go/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/go/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/go/Stone.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ihm/JeuDeGo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ihm/JeuDeGo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +59,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -75,7 +74,10 @@
       <workItem from="1700491695388" duration="2789000" />
       <workItem from="1700513269062" duration="308000" />
       <workItem from="1700566258443" duration="2321000" />
-      <workItem from="1700571663772" duration="3741000" />
+      <workItem from="1700571663772" duration="3810000" />
+      <workItem from="1700771234740" duration="1970000" />
+      <workItem from="1700773241060" duration="3114000" />
+      <workItem from="1700776406119" duration="740000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1700491729525</created>
@@ -105,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700501119814</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Updated structure and coded showboard">
+      <created>1700577007684</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1700577007684</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,7 +134,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Coded boardsize" />
-    <option name="LAST_COMMIT_MESSAGE" value="Coded boardsize" />
+    <MESSAGE value="Updated structure and coded showboard" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated structure and coded showboard" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
