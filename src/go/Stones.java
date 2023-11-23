@@ -1,5 +1,5 @@
 package go;
 
-public enum Colors {
+public enum Stones {
     BLACK, WHITE
 }
