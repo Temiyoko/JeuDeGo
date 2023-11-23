@@ -34,7 +34,7 @@ public class JeuDeGo {
                 boardsize(saisie);
             }
             else if (saisie.equals("showboard")){
-                System.out.println(goban.show());
+                System.out.println(goban.show(blackP, whiteP));
             }
             else{
                 System.out.println("? unknown command");

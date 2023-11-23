@@ -15,7 +15,7 @@ public class Goban {
         this.stones = new Stones[n][n];
     }
 
-    public String show() {
+    public String show(Player p1, Player p2) {
         StringBuilder sb = new StringBuilder("   ");
         int cpt = size;
 
@@ -31,13 +31,17 @@ public class Goban {
             }
 
             sb.append(cpt < 10 ? " " + cpt : cpt);
+            sb.append(cpt == 2 ? "     " + p2.toString() : cpt == 1 ? "     " + p1.toString() : "");
+
             sb.append(System.lineSeparator());
             --cpt;
         }
 
         sb.append("   ");
         letters(sb);
-        
+
+
+
         return sb.toString();
     }
 
