@@ -1,0 +1,24 @@
+<changelist name="Uncommitted_changes_before_Update_at_23_11_2023_23_09_[Changes]" date="1700777394333" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_11_2023_23_09_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 23/11/2023 23:09 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/JeuDeGo/ihm/JeuDeGo.class" />
+    <option name="AFTER_PATH" value="out/production/JeuDeGo/ihm/JeuDeGo.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_11_2023_23_09_[Changes]/JeuDeGo.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/JeuDeGo/go/Player.class" />
+    <option name="AFTER_PATH" value="out/production/JeuDeGo/go/Player.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_11_2023_23_09_[Changes]/Player.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/JeuDeGo/go/Colors.class" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/JeuDeGo/go/Goban.class" />
+    <option name="AFTER_PATH" value="out/production/JeuDeGo/go/Goban.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_11_2023_23_09_[Changes]/Goban.class" />
+  </binary>
+</changelist>
