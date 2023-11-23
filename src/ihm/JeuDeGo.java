@@ -36,6 +36,9 @@ public class JeuDeGo {
             else if (saisie.equals("showboard")){
                 System.out.println(goban.show());
             }
+            else if (saisie.equals("showboard")) {
+                System.out.println(goban.show());
+            }
             else{
                 System.out.println("? unknown command");
             }
