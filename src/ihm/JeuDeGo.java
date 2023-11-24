@@ -4,10 +4,7 @@ import go.Stones;
 import go.Goban;
 import go.Player;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
 public class JeuDeGo {
     private static final int MINSIZE = 1, MAXSIZE = 19;
@@ -20,47 +17,61 @@ public class JeuDeGo {
         blackP = new Player(Stones.BLACK);
         whiteP = new Player(Stones.WHITE);
         history = new HashMap<>();
+        String id, cmd;
+        String[] arg;
 
         Scanner sc = new Scanner(System.in);
 
         while(sc.hasNextLine()) {
-            String saisie = sc.nextLine().trim();
+            String input = sc.nextLine().trim();
+            String[] arguments = input.split("\\s+");
 
-            if (saisie.equals("quit")){
-                System.out.println("=");
+            if(isInt(arguments[0])){
+                id = arguments[0];
+                cmd = arguments[1];
+                arg = Arrays.copyOfRange(arguments, 2, arguments.length);
+            }
+            else{
+                id = "";
+                cmd = arguments[0];
+                arg = Arrays.copyOfRange(arguments, 1, arguments.length);
+            }
+
+            if (cmd.equals("quit")){
+                System.out.println("=" + id);
                 break;
             }
-            else if (saisie.startsWith("boardsize")) {
-                boardsize(saisie);
+            else if (cmd.equals("boardsize")) {
+                boardsize(arg[0], id);
             }
-            else if (saisie.equals("showboard")){
+            else if (cmd.equals("showboard")){
+                System.out.println("=" + id);
                 System.out.println(goban.show(blackP, whiteP));
             }
             else{
-                System.out.println("? unknown command");
+                System.out.println("?" + id +" unknown command");
             }
         }
         sc.close();
     }
 
-    private static void boardsize(String input) {
+    private static void boardsize(String args, String id) {
         try {
-            String[] words = input.split("\\s+");
-            int nb = Integer.parseInt(words[1]);
+            int nb = Integer.parseInt(args);
 
             if(nb < MINSIZE || nb > MAXSIZE){
-                System.out.println("? unacceptable size");
+                System.out.println("?" + id + " unacceptable size");
                 return;
             }
 
             resetGame(nb);
-            System.out.println("=");
+            System.out.println("=" + id);
         }
         catch (ArrayIndexOutOfBoundsException e){
-            System.out.println("? boardsize not an integer");
+            System.out.println("?" + id + " boardsize not an integer");
         }
         catch (NumberFormatException e) {
-            System.out.println("? unknown command");
+            System.out.println("?" + id + " unknown command");
         }
     }
 
@@ -73,6 +84,15 @@ public class JeuDeGo {
         whiteP.resetScore();
         // The history of moves made in the game will be reset to an arbitrary state.
         history = new HashMap<>();
+    }
+
+    private static boolean isInt(String s){
+        try{
+           Integer.parseInt(s);
+            return true;
+        } catch (NumberFormatException e) {
+            return false;
+        }
     }
 
 }
