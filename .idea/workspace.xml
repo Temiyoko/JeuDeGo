@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d91ec27-cc2e-442d-ad90-c0d4a67c50e3" name="Changes" comment="Updated structure and coded showboard">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/go/Colors.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/go/Goban.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JeuDeGo/go/Goban.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/go/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JeuDeGo/go/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/ihm/JeuDeGo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JeuDeGo/ihm/JeuDeGo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/go/Goban.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/go/Goban.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/go/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/go/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ihm/JeuDeGo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ihm/JeuDeGo.java" afterDir="false" />
-    </list>
+    <list default="true" id="3d91ec27-cc2e-442d-ad90-c0d4a67c50e3" name="Changes" comment="Finish showboard + updated Player" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,7 +68,7 @@
       <workItem from="1700571663772" duration="3810000" />
       <workItem from="1700771234740" duration="1970000" />
       <workItem from="1700773241060" duration="3114000" />
-      <workItem from="1700776406119" duration="740000" />
+      <workItem from="1700776406119" duration="922000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1700491729525</created>
@@ -114,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700577007684</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Finish showboard + updated Player">
+      <created>1700777327183</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1700777327183</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,7 +133,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Coded boardsize" />
     <MESSAGE value="Updated structure and coded showboard" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated structure and coded showboard" />
+    <MESSAGE value="Finish showboard + updated Player" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish showboard + updated Player" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
