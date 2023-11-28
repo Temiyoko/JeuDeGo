@@ -4,7 +4,12 @@ import go.Stones;
 import go.Goban;
 import go.Player;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.Arrays;
+
 
 public class JeuDeGo {
     private static final int MINSIZE = 1, MAXSIZE = 19;
@@ -42,7 +47,7 @@ public class JeuDeGo {
                 break;
             }
             else if (cmd.equals("boardsize")) {
-                boardsize(arg[0], id);
+                boardsize(arg, id);
             }
             else if (cmd.equals("showboard")){
                 System.out.println("=" + id);
@@ -55,9 +60,9 @@ public class JeuDeGo {
         sc.close();
     }
 
-    private static void boardsize(String args, String id) {
+    private static void boardsize(String[] args, String id) {
         try {
-            int nb = Integer.parseInt(args);
+            int nb = Integer.parseInt(args[0]);
 
             if(nb < MINSIZE || nb > MAXSIZE){
                 System.out.println("?" + id + " unacceptable size");
