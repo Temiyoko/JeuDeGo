@@ -8,11 +8,17 @@ public class Goban {
     public Goban(){
         this.size = DEFAULT_SIZE;
         this.stones = new Stones[DEFAULT_SIZE][DEFAULT_SIZE];
+        this.stones[5][5] = Stones.WHITE;
+        this.stones[5][6] = Stones.BLACK;
     }
 
     public Goban(int n){
         this.size = n;
         this.stones = new Stones[n][n];
+    }
+
+    public int getSize(){
+        return size;
     }
 
     public String show(Player p1, Player p2) {
@@ -39,8 +45,6 @@ public class Goban {
 
         sb.append("   ");
         letters(sb);
-
-
 
         return sb.toString();
     }

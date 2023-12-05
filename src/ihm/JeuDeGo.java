@@ -52,8 +52,10 @@ public class JeuDeGo {
             else if (cmd.equals("showboard")){
                 System.out.println("=" + id);
                 System.out.println(goban.show(blackP, whiteP));
-            }
-            else{
+            } else if (cmd.equals("clear_board")) {
+                resetGame(goban.getSize());
+                System.out.println("=" + id);
+            } else{
                 System.out.println("?" + id +" unknown command");
             }
         }
