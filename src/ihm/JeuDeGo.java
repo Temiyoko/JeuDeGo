@@ -52,14 +52,32 @@ public class JeuDeGo {
             else if (cmd.equals("showboard")){
                 System.out.println("=" + id);
                 System.out.println(goban.show(blackP, whiteP));
-            } else if (cmd.equals("clear_board")) {
+            }
+            else if (cmd.equals("clear_board")) {
                 resetGame(goban.getSize());
                 System.out.println("=" + id);
-            } else{
+            }
+            else if (cmd.equals("play")) {
+                play(arg, id);
+            }
+            else{
                 System.out.println("?" + id +" unknown command");
             }
         }
         sc.close();
+    }
+
+    private static void play(String[] arg, String id) {
+        try{
+            if(!arg[0].equalsIgnoreCase("white") && !arg[0].equalsIgnoreCase("black")){
+                throw new IllegalArgumentException();
+            }
+            else if (!arg[1].equalsIgnoreCase("pass") && !goban.isInBoard(arg[1])) {
+                throw new IllegalArgumentException();
+            }
+        } catch (IllegalArgumentException | ArrayIndexOutOfBoundsException e) {
+            System.out.println("?" + id + " invalid color or coordinate");
+        }
     }
 
     private static void boardsize(String[] args, String id) {

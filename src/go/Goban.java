@@ -8,8 +8,6 @@ public class Goban {
     public Goban(){
         this.size = DEFAULT_SIZE;
         this.stones = new Stones[DEFAULT_SIZE][DEFAULT_SIZE];
-        this.stones[5][5] = Stones.WHITE;
-        this.stones[5][6] = Stones.BLACK;
     }
 
     public Goban(int n){
@@ -21,6 +19,16 @@ public class Goban {
         return size;
     }
 
+    public boolean isInBoard(String s){
+        char c = s.toUpperCase().charAt(0);
+        if (c == 'I'){
+            return false;
+        }
+        int col = c > 'I' ? (int)c - 'A' - 1 : (int)c - 'A';
+        int line = Integer.parseInt(s.substring(1)) - 1;
+        return col >= 0 && col < size && line >= 0 && line < size;
+    }
+
     public String show(Player p1, Player p2) {
         StringBuilder sb = new StringBuilder("   ");
         int cpt = size;
@@ -28,7 +36,7 @@ public class Goban {
         letters(sb);
         sb.append(System.lineSeparator());
 
-        for (int i = 0 ; i < size ; ++i){
+        for (int i = size - 1 ; i >= 0 ; --i){
             sb.append(cpt < 10 ? " " + cpt : cpt).append(" ");
 
             for (int j = 0 ; j < size ; ++j){

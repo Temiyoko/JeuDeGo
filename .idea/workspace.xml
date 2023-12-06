@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d91ec27-cc2e-442d-ad90-c0d4a67c50e3" name="Changes" comment="Finished first sprint">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_11_2023_22_07_[Changes]/Goban.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_11_2023_22_07_[Changes]/JeuDeGo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_11_2023_22_07_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_11_2023_22_07__Changes_.xml" beforeDir="false" />
+    <list default="true" id="3d91ec27-cc2e-442d-ad90-c0d4a67c50e3" name="Changes" comment="Coded clear_board">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/go/Goban.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JeuDeGo/go/Goban.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/ihm/JeuDeGo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JeuDeGo/ihm/JeuDeGo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/go/Goban.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/go/Goban.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ihm/JeuDeGo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ihm/JeuDeGo.java" afterDir="false" />
     </list>
@@ -90,7 +87,9 @@
       <workItem from="1701176302453" duration="2538000" />
       <workItem from="1701180295399" duration="641000" />
       <workItem from="1701436027769" duration="5000" />
-      <workItem from="1701782135250" duration="608000" />
+      <workItem from="1701782135250" duration="814000" />
+      <workItem from="1701783023148" duration="6112000" />
+      <workItem from="1701854573996" duration="235000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1700491729525</created>
@@ -155,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701176689785</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Coded clear_board">
+      <created>1701782905290</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1701782905290</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,7 +186,8 @@
     <MESSAGE value="Finish showboard + updated Player" />
     <MESSAGE value="Handled numbers before command" />
     <MESSAGE value="Finished first sprint" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished first sprint" />
+    <MESSAGE value="Coded clear_board" />
+    <option name="LAST_COMMIT_MESSAGE" value="Coded clear_board" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
