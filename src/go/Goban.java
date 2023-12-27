@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Goban {
-    private static final int MINSIZE = 1, MAXSIZE = 19; // Dans le Goban ?
+    private static final int MINSIZE = 1, MAXSIZE = 19;
     private int size;
     private Stones[][] stones;
 
@@ -32,7 +32,7 @@ public class Goban {
     }
 
     public Stones getStone(int[] pos) {
-        return stones[pos[0]][pos[1]];
+        return stones[pos[1]][pos[0]];
     }
 
     public boolean isInBoard(int[] tab){ // Ex : "P9"
@@ -43,7 +43,7 @@ public class Goban {
         int liberties = 0;
 
         for (int[] adjPos : getAdjacentPositions(position)) {
-            if (stones[adjPos[0]][adjPos[1]] == null) {
+            if (isInBoard(adjPos) && stones[adjPos[1]][adjPos[0]] == null) {
                 liberties++;
             }
         }
@@ -51,14 +51,12 @@ public class Goban {
     }
 
     public List<int[]> getAdjacentPositions(int[] position) {
-        int x = position[0];
-        int y = position[1];
         List<int[]> adjacentPositions = new ArrayList<>();
 
         int[][] directions = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
         for (int[] dir : directions) {
-            int newX = x + dir[0];
-            int newY = y + dir[1];
+            int newX = position[0] + dir[0];
+            int newY = position[1] + dir[1];
             if (isInBoard(new int[]{newX, newY})) {
                 adjacentPositions.add(new int[]{newX, newY});
             }
@@ -68,7 +66,7 @@ public class Goban {
     }
 
     public void setStones(int[] tab, Stones s) {
-        stones[tab[0]][tab[1]] = s;
+        stones[tab[1]][tab[0]] = s;
     }
 
     public String show(Player p1, Player p2) {
@@ -100,7 +98,7 @@ public class Goban {
     }
 
     public boolean isPlayable(int[] tab){
-        return stones[tab[0]][tab[1]] == null;
+        return stones[tab[1]][tab[0]] == null;
     }
 
     private void letters(StringBuilder sb) {

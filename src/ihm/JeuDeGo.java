@@ -112,15 +112,12 @@ public class JeuDeGo {
             else if (!goban.isPlayable(coord)) {
                 throw new RuntimeException();
             }
-
-            //List<int[]> capturedStones = calculateCapturedStones(coord, p);
             Stones color = (p == blackP) ? Stones.BLACK : Stones.WHITE;
 
             history.get(p).add(arg[1]);
             goban.setStones(coord, color);
 
-            //captureStones(capturedStones);
-            //p.setScore(p.getScore() + capturedStones.size());
+            p.setScore(p.getScore() + captureStones(coord));
 
             System.out.println("=" + id);
             return p;
@@ -133,25 +130,18 @@ public class JeuDeGo {
         return lastP;
     }
 
-    private static List<int[]> calculateCapturedStones(int[] position, Player currentPlayer) {
-        List<int[]> capturedStones = new ArrayList<>();
-        Stones opponentColor = (currentPlayer == blackP) ? Stones.WHITE : Stones.BLACK;
-
-        for (int[] adjacentPos : goban.getAdjacentPositions(position)) {
-            if (goban.getStone(adjacentPos) == opponentColor) {
-                if (goban.getLiberties(adjacentPos) == 0) {
-                    capturedStones.add(adjacentPos);
+    public static int captureStones(int[] position) {
+        int cpt = 0;
+        for (int[] adjPos : goban.getAdjacentPositions(position)) {
+            if (goban.isInBoard(adjPos) && goban.getStone(adjPos) != null) {
+                int stoneLiberties = goban.getLiberties(adjPos);
+                if (stoneLiberties == 0) {
+                    goban.setStones(adjPos, null);
+                    cpt++;
                 }
             }
         }
-
-        return capturedStones;
-    }
-
-    private static void captureStones(List<int[]> capturedStones) {
-        for (int[] pos : capturedStones) {
-            goban.setStones(pos, null);
-        }
+        return cpt;
     }
 
     private static void boardsize(String[] args, String id) {
