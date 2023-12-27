@@ -4,11 +4,7 @@ import go.Stones;
 import go.Goban;
 import go.Player;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Scanner;
-import java.util.Arrays;
+import java.util.*;
 
 
 public class JeuDeGo {
@@ -20,7 +16,7 @@ public class JeuDeGo {
         goban = new Goban();
         blackP = new Player(Stones.BLACK);
         whiteP = new Player(Stones.WHITE);
-        history = new HashMap<>();
+        history = new HashMap<>(Map.of(blackP, new ArrayList<>(), whiteP, new ArrayList<>()));
         String id, cmd;
         String[] arg;
 
@@ -65,20 +61,49 @@ public class JeuDeGo {
         }
         sc.close();
     }
+    private static int[] convert(String s){ //A1
+        char c = s.toUpperCase().charAt(0);
+        if (c == 'I') {
+            throw new IllegalArgumentException();
+        }
+        int col = c > 'I' ? (int) c - 'A' - 1 : (int) c - 'A';
+        int ligne = Integer.parseInt(s.substring(1)) - 1;
+        return new int[]{col,  ligne};
+    }
+    private static void play(String[] arg, String id) { //play white A1 arreter le code quand prob
+        try {
+            if (!arg[0].equalsIgnoreCase("white") && !arg[0].equalsIgnoreCase("black")) {
+                throw new IllegalArgumentException();
+            }
+            Player p = arg[0].equalsIgnoreCase("black") ? blackP : whiteP;
 
-    private static void play(String[] arg, String id) {
-        try{
-            if(!arg[0].equalsIgnoreCase("white") && !arg[0].equalsIgnoreCase("black")){
+            if (arg[1].equalsIgnoreCase("pass")) {
+                history.get(p).add(arg[1]);
+                System.out.println("=" + id);
+                return;
+            }
+            int[] coord = convert(arg[1]);
+            if (!goban.isInBoard(coord)) {
                 throw new IllegalArgumentException();
             }
-            else if (!arg[1].equalsIgnoreCase("pass") && !goban.isInBoard(arg[1])) {
-                throw new IllegalArgumentException();
+            else if (!goban.isPlayable(coord)) {
+                throw new RuntimeException();
             }
+
+            Stones color = (p == blackP) ? Stones.BLACK : Stones.WHITE;
+
+            history.get(p).add(arg[1]);
+            goban.setGoban(coord, color);
+            System.out.println("=" + id);
+            System.out.println(history);
+
+
         } catch (IllegalArgumentException | ArrayIndexOutOfBoundsException e) {
             System.out.println("?" + id + " invalid color or coordinate");
+        } catch (RuntimeException e) {
+            System.out.println("?" + id + " illegal move");
         }
     }
-
     private static void boardsize(String[] args, String id) {
         try {
             int nb = Integer.parseInt(args[0]);

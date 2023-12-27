@@ -28,15 +28,8 @@ public class Goban {
         return MAXSIZE;
     }
 
-    public boolean isInBoard(String s){ // Ex : "P9"
-        char c = s.toUpperCase().charAt(0); // 'P'
-        if (c == 'I'){
-            return false;
-        }
-        int col = c > 'I' ? (int)c - 'A' - 1 : (int)c - 'A'; // Détermine la colonne associée à la lettre entrée
-        int line = Integer.parseInt(s.substring(1)) - 1; // Récupère la ligne entrée
-        // Vérifie que la colonne et la ligne sont dans les bornes du plateau
-        return col >= 0 && col < size && line >= 0 && line < size;
+    public boolean isInBoard(int[] tab){ // Ex : "P9"
+        return tab[0] >= 0 && tab[0] < size && tab[1] >= 0 && tab[1] < size;
     }
 
     public String show(Player p1, Player p2) {
@@ -67,10 +60,18 @@ public class Goban {
         return sb.toString();
     }
 
+    public boolean isPlayable(int[] tab){
+        return stones[tab[0]][tab[1]] == null;
+    }
+
     private void letters(StringBuilder sb) {
         for (int i = 0; i < size; ++i) {
             char c = (char)('A' + i);
             sb.append(c >= 'I' ? (char)(c + 1) : c).append(" ");
         }
+    }
+
+    public void setGoban(int[] tab, Stones s) {
+        stones[tab[0]][tab[1]] = s;
     }
 }
