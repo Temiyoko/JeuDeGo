@@ -1,4 +1,0 @@
-conseil:
-ajouter un paquetage player pour quand s'il y en a plusieurs
-faire une classe coordonée (sert a calculer les libertees d'une pierre) : 0 quand la coordonée est en dehors du goban, quand il y a déja une pierre ; 1 quand la case est libre ; garde en memoire les coordonnees deja visité
-créer une IA qui joue que des coordonees au hasard
