@@ -1,5 +1,8 @@
 package go;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Goban {
     private static final int MINSIZE = 1, MAXSIZE = 19; // Dans le Goban ?
     private int size;
@@ -28,8 +31,44 @@ public class Goban {
         return MAXSIZE;
     }
 
+    public Stones getStone(int[] pos) {
+        return stones[pos[0]][pos[1]];
+    }
+
     public boolean isInBoard(int[] tab){ // Ex : "P9"
         return tab[0] >= 0 && tab[0] < size && tab[1] >= 0 && tab[1] < size;
+    }
+
+    public int getLiberties(int[] position) {
+        int liberties = 0;
+
+        for (int[] adjPos : getAdjacentPositions(position)) {
+            if (stones[adjPos[0]][adjPos[1]] == null) {
+                liberties++;
+            }
+        }
+        return liberties;
+    }
+
+    public List<int[]> getAdjacentPositions(int[] position) {
+        int x = position[0];
+        int y = position[1];
+        List<int[]> adjacentPositions = new ArrayList<>();
+
+        int[][] directions = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
+        for (int[] dir : directions) {
+            int newX = x + dir[0];
+            int newY = y + dir[1];
+            if (isInBoard(new int[]{newX, newY})) {
+                adjacentPositions.add(new int[]{newX, newY});
+            }
+        }
+
+        return adjacentPositions;
+    }
+
+    public void setStones(int[] tab, Stones s) {
+        stones[tab[0]][tab[1]] = s;
     }
 
     public String show(Player p1, Player p2) {
@@ -66,12 +105,8 @@ public class Goban {
 
     private void letters(StringBuilder sb) {
         for (int i = 0; i < size; ++i) {
-            char c = (char)('A' + i);
-            sb.append(c >= 'I' ? (char)(c + 1) : c).append(" ");
+            char c = (char) ('A' + i);
+            sb.append(c >= 'I' ? (char) (c + 1) : c).append(" ");
         }
-    }
-
-    public void setGoban(int[] tab, Stones s) {
-        stones[tab[0]][tab[1]] = s;
     }
 }
