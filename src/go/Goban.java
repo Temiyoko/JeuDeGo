@@ -1,16 +1,17 @@
 package go;
 
 public class Goban {
-    private static final int DEFAULT_SIZE = 19;
+    private static final int MINSIZE = 1, MAXSIZE = 19; // Dans le Goban ?
     private int size;
     private Stones[][] stones;
 
     public Goban(){
-        this.size = DEFAULT_SIZE;
-        this.stones = new Stones[DEFAULT_SIZE][DEFAULT_SIZE];
+        this.size = MAXSIZE;
+        this.stones = new Stones[MAXSIZE][MAXSIZE];
     }
 
     public Goban(int n){
+        assert n >= MINSIZE && n <= MAXSIZE;
         this.size = n;
         this.stones = new Stones[n][n];
     }
@@ -19,13 +20,22 @@ public class Goban {
         return size;
     }
 
-    public boolean isInBoard(String s){
-        char c = s.toUpperCase().charAt(0);
+    public int getMinSize(){
+        return MINSIZE;
+    }
+
+    public int getMaxSize(){
+        return MAXSIZE;
+    }
+
+    public boolean isInBoard(String s){ // Ex : "P9"
+        char c = s.toUpperCase().charAt(0); // 'P'
         if (c == 'I'){
             return false;
         }
-        int col = c > 'I' ? (int)c - 'A' - 1 : (int)c - 'A';
-        int line = Integer.parseInt(s.substring(1)) - 1;
+        int col = c > 'I' ? (int)c - 'A' - 1 : (int)c - 'A'; // Détermine la colonne associée à la lettre entrée
+        int line = Integer.parseInt(s.substring(1)) - 1; // Récupère la ligne entrée
+        // Vérifie que la colonne et la ligne sont dans les bornes du plateau
         return col >= 0 && col < size && line >= 0 && line < size;
     }
 

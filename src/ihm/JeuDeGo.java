@@ -12,7 +12,6 @@ import java.util.Arrays;
 
 
 public class JeuDeGo {
-    private static final int MINSIZE = 1, MAXSIZE = 19;
     private static Goban goban;
     private static Player blackP, whiteP;
     private static Map<Player, List<String>> history;
@@ -84,7 +83,7 @@ public class JeuDeGo {
         try {
             int nb = Integer.parseInt(args[0]);
 
-            if(nb < MINSIZE || nb > MAXSIZE){
+            if(nb < goban.getMinSize() || nb > goban.getMaxSize()){
                 System.out.println("?" + id + " unacceptable size");
                 return;
             }
@@ -101,7 +100,7 @@ public class JeuDeGo {
     }
 
     private static void resetGame(int nb) {
-        assert nb >= MINSIZE && nb <= MAXSIZE;
+        assert nb >= goban.getMinSize() && nb <= goban.getMaxSize();
 
         goban = new Goban(nb); // The board size is changed and attributes are reset
         // The count of stones captured by each player will be reset to an arbitrary state.
@@ -114,7 +113,7 @@ public class JeuDeGo {
     private static boolean isInt(String s){
         try{
            Integer.parseInt(s);
-            return true;
+           return true;
         } catch (NumberFormatException e) {
             return false;
         }

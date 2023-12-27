@@ -25,6 +25,6 @@ public class Player {
         StringBuilder sb = new StringBuilder();
         String symbole = stoneColor == Stones.WHITE ? " (0) " : " (X) ";
         sb.append(stoneColor).append(symbole).append("has captured ").append(score).append(" stones");
-        return  sb.toString();
+        return sb.toString();
     }
 }
