@@ -83,6 +83,7 @@ public class JeuDeGo {
         int ligne = Integer.parseInt(s.substring(1)) - 1;
         return new int[]{col,  ligne};
     }
+    
     private static Player play(String[] arg, String id, Player lastP) {
         try {
             if (!arg[0].equalsIgnoreCase("white") && !arg[0].equalsIgnoreCase("black")) {
@@ -121,7 +122,7 @@ public class JeuDeGo {
             history.get(p).add(arg[1]);
             goban.setStones(coord, color);
 
-            p.setScore(p.getScore() + captureStones(coord));
+            p.setScore(p.getScore() + goban.captureStones(coord));
 
             System.out.println("=" + id);
             return p;
@@ -143,20 +144,6 @@ public class JeuDeGo {
         goban.setStones(position, null);
 
         return isSuicide;
-    }
-
-    public static int captureStones(int[] position) {
-        int cpt = 0;
-        for (int[] adjPos : goban.getAdjacentPositions(position)) {
-            if (goban.isInBoard(adjPos) && goban.getStone(adjPos) != null) {
-                int stoneLiberties = goban.getLiberties(adjPos);
-                if (stoneLiberties == 0) {
-                    goban.setStones(adjPos, null);
-                    cpt++;
-                }
-            }
-        }
-        return cpt;
     }
 
     private static void boardsize(String[] args, String id) {

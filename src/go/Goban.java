@@ -43,10 +43,13 @@ public class Goban {
         int liberties = 0;
 
         for (int[] adjPos : getAdjacentPositions(position)) {
-            if (isInBoard(adjPos) && stones[adjPos[1]][adjPos[0]] == null) {
+            Stones adjStone = getStone(adjPos);
+
+            if (adjStone == null || adjStone == getStone(position)) {
                 liberties++;
             }
         }
+
         return liberties;
     }
 
@@ -63,6 +66,20 @@ public class Goban {
         }
 
         return adjacentPositions;
+    }
+
+    public int captureStones(int[] position) {
+        int cpt = 0;
+        for (int[] adjPos : getAdjacentPositions(position)) {
+            if (getStone(adjPos) != null) {
+                int stoneLiberties = getLiberties(adjPos);
+                if (stoneLiberties == 0) {
+                    setStones(adjPos, null);
+                    cpt++;
+                }
+            }
+        }
+        return cpt;
     }
 
     public void setStones(int[] tab, Stones s) {
