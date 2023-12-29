@@ -134,7 +134,7 @@ public class JeuDeGo {
         return lastP;
     }
 
-    public static boolean isSuicideMove(int[] position, Stones color) {
+    public static boolean isSuicide(int[] position, Stones color) {
         goban.setStones(position, color);
 
         int liberties = goban.getLiberties(position);
