@@ -31,16 +31,23 @@ public class Goban {
         return MAXSIZE;
     }
 
+    public Stones getStone(int[] pos) {
+        return stones[pos[1]][pos[0]];
+    }
+
     public boolean isInBoard(int[] tab){ // Ex : "P9"
         return tab[0] >= 0 && tab[0] < size && tab[1] >= 0 && tab[1] < size;
     }
 
-    public void setStones(int[] tab, Stones s) {
-        stones[tab[1]][tab[0]] = s;
-    }
+    public int getLiberties(int[] position) {
+        int liberties = 0;
 
-    public Stones getStone(int[] tab) {
-        return stones[tab[1]][tab[0]];
+        for (int[] adjPos : getAdjacentPositions(position)) {
+            if (isInBoard(adjPos) && stones[adjPos[1]][adjPos[0]] == null) {
+                liberties++;
+            }
+        }
+        return liberties;
     }
 
     public List<int[]> getAdjacentPositions(int[] position) {
@@ -58,15 +65,8 @@ public class Goban {
         return adjacentPositions;
     }
 
-    public int getLiberties(int[] position) {
-        int liberties = 0;
-
-        for (int[] adjPos : getAdjacentPositions(position)) {
-            if (isInBoard(adjPos) && stones[adjPos[1]][adjPos[0]] == null) {
-                liberties++;
-            }
-        }
-        return liberties;
+    public void setStones(int[] tab, Stones s) {
+        stones[tab[1]][tab[0]] = s;
     }
 
     public String show(Player p1, Player p2) {
@@ -103,8 +103,8 @@ public class Goban {
 
     private void letters(StringBuilder sb) {
         for (int i = 0; i < size; ++i) {
-            char c = (char)('A' + i);
-            sb.append(c >= 'I' ? (char)(c + 1) : c).append(" ");
+            char c = (char) ('A' + i);
+            sb.append(c >= 'I' ? (char) (c + 1) : c).append(" ");
         }
     }
 }

@@ -4,10 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d91ec27-cc2e-442d-ad90-c0d4a67c50e3" name="Changes" comment="Prohibited suicide move">
+    <list default="true" id="3d91ec27-cc2e-442d-ad90-c0d4a67c50e3" name="Changes" comment="Finished Play method">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_11_2023_19_00_[Changes]/shelved.patch" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_11_2023_19_00_[Changes]/shelved.patch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_11_2023_22_54_[Changes]/shelved.patch" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_11_2023_22_54_[Changes]/shelved.patch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_11_2023_23_09_[Changes]/shelved.patch" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_11_2023_23_09_[Changes]/shelved.patch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_12_2023_11_55_[Changes]/shelved.patch" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_12_2023_11_55_[Changes]/shelved.patch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_12_2023_13_03_[Changes]/shelved.patch" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_12_2023_13_03_[Changes]/shelved.patch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JeuDeGo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JeuDeGo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/go/Goban.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JeuDeGo/go/Goban.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/ihm/JeuDeGo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JeuDeGo/ihm/JeuDeGo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/go/Goban.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/go/Goban.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/go/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/go/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/go/Stones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/go/Stones.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ihm/JeuDeGo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ihm/JeuDeGo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,37 +64,26 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.JeuDeGo.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "F:/Documents/Cours/BUT2/Periode B/Quali dev/JeuDeGo",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.JeuDeGo.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/Documents/Cours/BUT2/Periode B/Quali dev/JeuDeGo&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-17.0.9-corretto-17.0.9-f644763e9732-ebaef533" />
-      </set>
-    </attachedChunks>
-  </component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -111,8 +117,6 @@
       <workItem from="1703674040475" duration="269000" />
       <workItem from="1703674339417" duration="64000" />
       <workItem from="1703674404384" duration="3663000" />
-      <workItem from="1703866899932" duration="627000" />
-      <workItem from="1703869108534" duration="5626000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1700491729525</created>
@@ -200,31 +204,7 @@
       <option name="project" value="LOCAL" />
       <updated>1703704617785</updated>
     </task>
-    <task id="LOCAL-00013" summary="Finished Play method">
-      <option name="closed" value="true" />
-      <created>1703708718389</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1703708718389</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Finished Play method">
-      <option name="closed" value="true" />
-      <created>1703866913191</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1703866913191</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Prohibited suicide move">
-      <option name="closed" value="true" />
-      <created>1703875059523</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1703875059523</updated>
-    </task>
-    <option name="localTasksCounter" value="16" />
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,8 +232,7 @@
     <MESSAGE value="Coded clear_board" />
     <MESSAGE value="Small changes" />
     <MESSAGE value="Finished Play method" />
-    <MESSAGE value="Prohibited suicide move" />
-    <option name="LAST_COMMIT_MESSAGE" value="Prohibited suicide move" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished Play method" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -15,7 +15,6 @@ public class JeuDeGo {
     public static void main(String[] args) {
         initializeGame();
         Player lastPlayer = whiteP;
-
         Scanner sc = new Scanner(System.in);
 
         while (sc.hasNextLine()) {
@@ -25,12 +24,11 @@ public class JeuDeGo {
             String id, cmd;
             String[] arg;
 
-            if(isInt(arguments[0])){
+            if (isInt(arguments[0])) {
                 id = arguments[0];
                 cmd = arguments[1];
                 arg = Arrays.copyOfRange(arguments, 2, arguments.length);
-            }
-            else{
+            } else {
                 id = "";
                 cmd = arguments[0];
                 arg = Arrays.copyOfRange(arguments, 1, arguments.length);
@@ -76,8 +74,7 @@ public class JeuDeGo {
         System.out.println(goban.show(blackP, whiteP));
     }
 
-
-    private static int[] convert(String s){ //A1
+    private static int[] convert(String s){
         char c = s.toUpperCase().charAt(0);
         if (c == 'I') {
             throw new IllegalArgumentException();
@@ -86,7 +83,6 @@ public class JeuDeGo {
         int ligne = Integer.parseInt(s.substring(1)) - 1;
         return new int[]{col,  ligne};
     }
-
     private static Player play(String[] arg, String id, Player lastP) {
         try {
             if (!arg[0].equalsIgnoreCase("white") && !arg[0].equalsIgnoreCase("black")) {
@@ -99,14 +95,11 @@ public class JeuDeGo {
             }
 
             if (arg[1].equalsIgnoreCase("pass")) {
-                history.get(p).add(arg[1]);
                 List<String> prev = history.get(p);
-
                 if(!prev.isEmpty() && prev.get(prev.size() - 1).equalsIgnoreCase("pass")){
                     System.out.println("=" + id + " resigns");
                     return null;
                 }
-
                 prev.add(arg[1]);
                 System.out.println("=" + id);
                 return p;
@@ -119,16 +112,16 @@ public class JeuDeGo {
             else if (!goban.isPlayable(coord)) {
                 throw new RuntimeException();
             }
-
             Stones color = (p == blackP) ? Stones.BLACK : Stones.WHITE;
 
             if (isSuicide(coord, color)) {
                 throw new RuntimeException();
             }
 
-            p.setScore(p.getScore() + captureStones(coord));
             history.get(p).add(arg[1]);
             goban.setStones(coord, color);
+
+            p.setScore(p.getScore() + captureStones(coord));
 
             System.out.println("=" + id);
             return p;
@@ -141,6 +134,17 @@ public class JeuDeGo {
         return lastP;
     }
 
+    public static boolean isSuicideMove(int[] position, Stones color) {
+        goban.setStones(position, color);
+
+        int liberties = goban.getLiberties(position);
+        boolean isSuicide = liberties == 0;
+
+        goban.setStones(position, null);
+
+        return isSuicide;
+    }
+
     public static int captureStones(int[] position) {
         int cpt = 0;
         for (int[] adjPos : goban.getAdjacentPositions(position)) {
@@ -148,22 +152,11 @@ public class JeuDeGo {
                 int stoneLiberties = goban.getLiberties(adjPos);
                 if (stoneLiberties == 0) {
                     goban.setStones(adjPos, null);
-                    ++cpt;
+                    cpt++;
                 }
             }
         }
         return cpt;
-    }
-
-    public static boolean isSuicide(int[] position, Stones color) {
-        goban.setStones(position, color); // Simulate placing the stone
-
-        int liberties = goban.getLiberties(position);
-        boolean isSuicide = liberties == 0;
-
-        goban.setStones(position, null); // Revert the move
-
-        return isSuicide;
     }
 
     private static void boardsize(String[] args, String id) {
@@ -189,18 +182,16 @@ public class JeuDeGo {
     private static void resetGame(int nb) {
         assert nb >= goban.getMinSize() && nb <= goban.getMaxSize();
 
-        goban = new Goban(nb); // The board size is changed and attributes are reset
-        // The count of stones captured by each player will be reset to an arbitrary state.
+        goban = new Goban(nb);
         blackP.resetScore();
         whiteP.resetScore();
-        // The history of moves made in the game will be reset to an arbitrary state.
-        history = new HashMap<>();
+        history = new HashMap<>(Map.of(blackP, new ArrayList<>(), whiteP, new ArrayList<>()));
     }
 
     private static boolean isInt(String s){
         try{
-            Integer.parseInt(s);
-            return true;
+           Integer.parseInt(s);
+           return true;
         } catch (NumberFormatException e) {
             return false;
         }
