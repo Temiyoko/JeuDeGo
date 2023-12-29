@@ -13,18 +13,17 @@ public class JeuDeGo {
     private static Map<Player, List<String>> history;
 
     public static void main(String[] args) {
-        goban = new Goban();
-        blackP = new Player(Stones.BLACK);
-        whiteP = new Player(Stones.WHITE);
-        history = new HashMap<>(Map.of(blackP, new ArrayList<>(), whiteP, new ArrayList<>()));
-        String id, cmd;
-        String[] arg;
+        initializeGame();
+        Player lastPlayer = whiteP;
 
         Scanner sc = new Scanner(System.in);
 
-        while(sc.hasNextLine()) {
+        while (sc.hasNextLine()) {
             String input = sc.nextLine().trim();
             String[] arguments = input.split("\\s+");
+
+            String id, cmd;
+            String[] arg;
 
             if(isInt(arguments[0])){
                 id = arguments[0];
@@ -37,30 +36,47 @@ public class JeuDeGo {
                 arg = Arrays.copyOfRange(arguments, 1, arguments.length);
             }
 
-            if (cmd.equals("quit")){
-                System.out.println("=" + id);
-                break;
-            }
-            else if (cmd.equals("boardsize")) {
-                boardsize(arg, id);
-            }
-            else if (cmd.equals("showboard")){
-                System.out.println("=" + id);
-                System.out.println(goban.show(blackP, whiteP));
-            }
-            else if (cmd.equals("clear_board")) {
-                resetGame(goban.getSize());
-                System.out.println("=" + id);
-            }
-            else if (cmd.equals("play")) {
-                play(arg, id);
-            }
-            else{
-                System.out.println("?" + id +" unknown command");
+            switch (cmd) {
+                case "quit":
+                    System.out.println("=" + id);
+                    return;
+                case "boardsize":
+                    boardsize(arg, id);
+                    break;
+                case "showboard":
+                    showBoard(id);
+                    break;
+                case "clear_board":
+                    resetGame(goban.getSize());
+                    System.out.println("=" + id);
+                    break;
+                case "play":
+                    lastPlayer = play(arg, id, lastPlayer);
+                    if (lastPlayer == null) {
+                        return;
+                    }
+                    break;
+                default:
+                    System.out.println("?" + id + " unknown command");
+                    break;
             }
         }
         sc.close();
     }
+
+    private static void initializeGame() {
+        goban = new Goban();
+        blackP = new Player(Stones.BLACK);
+        whiteP = new Player(Stones.WHITE);
+        history = new HashMap<>(Map.of(blackP, new ArrayList<>(), whiteP, new ArrayList<>()));
+    }
+
+    private static void showBoard(String id) {
+        System.out.println("=" + id);
+        System.out.println(goban.show(blackP, whiteP));
+    }
+
+
     private static int[] convert(String s){ //A1
         char c = s.toUpperCase().charAt(0);
         if (c == 'I') {
@@ -70,18 +86,32 @@ public class JeuDeGo {
         int ligne = Integer.parseInt(s.substring(1)) - 1;
         return new int[]{col,  ligne};
     }
-    private static void play(String[] arg, String id) { //play white A1 arreter le code quand prob
+
+    private static Player play(String[] arg, String id, Player lastP) {
         try {
             if (!arg[0].equalsIgnoreCase("white") && !arg[0].equalsIgnoreCase("black")) {
                 throw new IllegalArgumentException();
             }
             Player p = arg[0].equalsIgnoreCase("black") ? blackP : whiteP;
 
+            if (p == lastP) {
+                throw new RuntimeException();
+            }
+
             if (arg[1].equalsIgnoreCase("pass")) {
                 history.get(p).add(arg[1]);
+                List<String> prev = history.get(p);
+
+                if(!prev.isEmpty() && prev.get(prev.size() - 1).equalsIgnoreCase("pass")){
+                    System.out.println("=" + id + " resigns");
+                    return null;
+                }
+
+                prev.add(arg[1]);
                 System.out.println("=" + id);
-                return;
+                return p;
             }
+
             int[] coord = convert(arg[1]);
             if (!goban.isInBoard(coord)) {
                 throw new IllegalArgumentException();
@@ -101,12 +131,14 @@ public class JeuDeGo {
             goban.setStones(coord, color);
 
             System.out.println("=" + id);
+            return p;
 
         } catch (IllegalArgumentException | ArrayIndexOutOfBoundsException e) {
             System.out.println("?" + id + " invalid color or coordinate");
         } catch (RuntimeException e) {
             System.out.println("?" + id + " illegal move");
         }
+        return lastP;
     }
 
     public static int captureStones(int[] position) {
