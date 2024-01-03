@@ -44,7 +44,10 @@ public abstract class Player implements IPlayer {
     }
 
     public boolean isSuicide(int[] position, Goban board) {
-        return board.getLiberties(position, stoneColor) == 0;
+        board.setStone(position, getStoneColor());
+        boolean free = board.getLiberties(position, stoneColor) == 0;
+        board.setStone(position, null);
+        return free;
     }
 
     public String toString(){

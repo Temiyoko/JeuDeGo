@@ -53,6 +53,7 @@ public class JeuDeGo {
                     if (lastPlayer == null) {
                         return;
                     }
+                    showboard(id);
                     break;
                 default:
                     System.out.println("?" + id + " unknown command");
@@ -73,7 +74,11 @@ public class JeuDeGo {
         System.out.println(goban.show(blackP, whiteP));
     }
 
-    private static int[] convert(String s){ //A1
+    private static int[] convert(String s){
+        if(s.equalsIgnoreCase("pass")){
+            return new int[]{0, 0};
+        }
+
         char c = s.toUpperCase().charAt(0);
         if (c == 'I') {
             throw new IllegalArgumentException();

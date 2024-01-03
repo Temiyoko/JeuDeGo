@@ -1,0 +1,30 @@
+Index: src/go/Player.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package go;\r\n\r\nimport java.util.List;\r\nimport java.util.ArrayList;\r\n\r\npublic class Player {\r\n    private final Stones stoneColor;\r\n    private int score;\r\n    private List<String> moveHistory;\r\n\r\n    public Player(Stones c){\r\n        this.stoneColor = c;\r\n        this.score = 0;\r\n        this.moveHistory = new ArrayList<>();\r\n    }\r\n\r\n    public int getScore() {\r\n        return score;\r\n    }\r\n\r\n    public void setScore(int score) {\r\n        this.score = score;\r\n    }\r\n\r\n    public void addMove(String move) {\r\n        moveHistory.add(move);\r\n    }\r\n\r\n    public String getLastMove(){\r\n        return moveHistory.isEmpty() ? \" \" : moveHistory.get(moveHistory.size() - 1);\r\n    }\r\n\r\n    public void reset() {\r\n        score = 0;\r\n        moveHistory = new ArrayList<>();\r\n    }\r\n\r\n    public boolean play(String move, String id, int[] coord, Goban board) {\r\n        if (move.equalsIgnoreCase(\"pass\")) {\r\n\r\n            if (getLastMove().equalsIgnoreCase(\"pass\")){\r\n                System.out.println(\"=\" + id + \" resigns\");\r\n                return false;\r\n            }\r\n\r\n            addMove(move);\r\n            System.out.println(\"=\" + id);\r\n            return true;\r\n        }\r\n\r\n        if (!board.isInBoard(coord)) {\r\n            throw new IllegalArgumentException();\r\n        }\r\n        else if (!board.isPlayable(coord) || isSuicide(coord, board)) {\r\n            throw new RuntimeException();\r\n        }\r\n\r\n        addMove(move);\r\n        board.setStone(coord, this.stoneColor);\r\n\r\n        setScore(getScore() + board.captureStones(coord));\r\n\r\n        System.out.println(\"=\" + id);\r\n        return true;\r\n    }\r\n\r\n    private static boolean isSuicide(int[] position, Goban board) {\r\n        return board.getLiberties(position) == 0;\r\n    }\r\n\r\n    public String toString(){\r\n        StringBuilder sb = new StringBuilder();\r\n        String symbole = stoneColor == Stones.WHITE ? \" (0) \" : \" (X) \";\r\n        sb.append(stoneColor).append(symbole).append(\"has captured \").append(score).append(\" stones\");\r\n        return sb.toString();\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/src/go/Player.java b/src/go/Player.java
+--- a/src/go/Player.java	
++++ b/src/go/Player.java	
+@@ -56,16 +56,16 @@
+         }
+ 
+         addMove(move);
+-        board.setStone(coord, this.stoneColor);
+-
+-        setScore(getScore() + board.captureStones(coord));
++        board.setStone(coord, stoneColor);
++        System.out.println(board.captureStones(coord));
++        //setScore(getScore() + board.captureStones(coord));
+ 
+         System.out.println("=" + id);
+         return true;
+     }
+ 
+-    private static boolean isSuicide(int[] position, Goban board) {
+-        return board.getLiberties(position) == 0;
++    private boolean isSuicide(int[] position, Goban board) {
++        return board.getLiberties(position, stoneColor) == 0;
+     }
+ 
+     public String toString(){

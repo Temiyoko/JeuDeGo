@@ -7,6 +7,7 @@ public class Human extends Player {
     public Human(Stones c){
         super(c);
     }
+
     public boolean play(String move, String id, int[] coord, Goban board) {
         if (move.equalsIgnoreCase("pass")) {
 
@@ -31,8 +32,6 @@ public class Human extends Player {
         board.setStone(coord, getStoneColor());
 
         setScore(getScore() + board.captureStones(coord, getStoneColor()));
-
-        System.out.println("=" + id);
         return true;
     }
 

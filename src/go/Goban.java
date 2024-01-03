@@ -34,7 +34,7 @@ public class Goban {
         return MAXSIZE;
     }
 
-    private Stones getStone(int[] position) {
+    public Stones getStone(int[] position) {
         return stones[position[1]][position[0]];
     }
 
@@ -56,9 +56,7 @@ public class Goban {
             return 0;
         }
 
-        setStone(position, color);
         int liberties = countLiberties(position, color, new boolean[size][size]);
-        setStone(position, null);
 
         return liberties;
     }
@@ -86,29 +84,42 @@ public class Goban {
         return liberties;
     }
 
-    public int captureStones(int[] position, Stones color){
+    public int captureStones(int[] position, Stones color) {
         int cpt = 0;
         Stones advColor = color == Stones.BLACK ? Stones.WHITE : Stones.BLACK;
-        for(int[] pos : stonesToCatch(position, advColor)){
+        List<int[]> stonesToRemove = new ArrayList<>();
+        boolean[][] visited = new boolean[size][size];
+
+        for (int[] dir : DIRECTIONS) {
+            int[] adjacentPosition = new int[]{position[0] + dir[0], position[1] + dir[1]};
+            if (isInBoard(adjacentPosition) && getStone(adjacentPosition) == advColor
+                    && !visited[adjacentPosition[1]][adjacentPosition[0]]) {
+                List<int[]> group = new ArrayList<>();
+                captureGroup(adjacentPosition, advColor, group, visited);
+                stonesToRemove.addAll(group);
+                cpt += group.size();
+            }
+        }
+
+        for (int[] pos : stonesToRemove) {
             setStone(pos, null);
-            cpt++;
         }
         return cpt;
     }
 
-    private List<int[]> stonesToCatch(int[] position, Stones color) {
-        List<int[]> zeroLiberties = new ArrayList<>();
+    private void captureGroup(int[] position, Stones color, List<int[]> group, boolean[][] visited) {
+        if (!isInBoard(position) || visited[position[1]][position[0]] || getStone(position) != color) {
+            return;
+        }
+
+        visited[position[1]][position[0]] = true;
+        group.add(position);
 
         for (int[] dir : DIRECTIONS) {
             int[] adjacentPosition = new int[]{position[0] + dir[0], position[1] + dir[1]};
-            if (isInBoard(adjacentPosition) && getStone(adjacentPosition) == color && getLiberties(adjacentPosition, color) == 0) {
-                zeroLiberties.add(adjacentPosition);
-            }
+            captureGroup(adjacentPosition, color, group, visited);
         }
-        System.out.println(zeroLiberties);
-        return zeroLiberties;
     }
-
 
     public String show(IPlayer p1, IPlayer p2) {
         StringBuilder sb = new StringBuilder("   ");
