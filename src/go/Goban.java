@@ -96,8 +96,10 @@ public class Goban {
                     && !visited[adjacentPosition[1]][adjacentPosition[0]]) {
                 List<int[]> group = new ArrayList<>();
                 captureGroup(adjacentPosition, advColor, group, visited);
-                stonesToRemove.addAll(group);
-                cpt += group.size();
+                if (getLiberties(adjacentPosition, advColor) == 0) {
+                    stonesToRemove.addAll(group);
+                    cpt += group.size();
+                }
             }
         }
 
