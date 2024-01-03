@@ -47,7 +47,6 @@ public class Goban {
         int liberties = 0;
 
         for (int[] adjPos : getAdjacentPositions(position)) {
-
             if (isPlayable(adjPos)) {
                 liberties++;
             }
