@@ -115,12 +115,12 @@ public class JeuDeGo {
             }
             Stones color = (p == blackP) ? Stones.BLACK : Stones.WHITE;
 
-            /*if (isSuicide(coord, color)) {
+            if (isSuicide(coord, color)) {
                 throw new RuntimeException();
-            }*/
+            }
 
             history.get(p).add(arg[1]);
-            goban.setStones(coord, color);
+            goban.setStone(coord, color);
 
             p.setScore(p.getScore() + goban.captureStones(coord));
 
@@ -136,12 +136,12 @@ public class JeuDeGo {
     }
 
     public static boolean isSuicide(int[] position, Stones color) {
-        goban.setStones(position, color);
+        goban.setStone(position, color);
 
         int liberties = goban.getLiberties(position);
         boolean isSuicide = liberties == 0;
 
-        goban.setStones(position, null);
+        goban.setStone(position, null);
 
         return isSuicide;
     }
