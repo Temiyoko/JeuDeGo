@@ -10,8 +10,6 @@ import java.util.*;
 public class JeuDeGo {
     private static Goban goban;
     private static Player blackP, whiteP;
-    private static Map<Player, List<String>> history;
-
     public static void main(String[] args) {
         initializeGame();
         Player lastPlayer = whiteP;
@@ -67,7 +65,6 @@ public class JeuDeGo {
         goban = new Goban();
         blackP = new Player(Stones.BLACK);
         whiteP = new Player(Stones.WHITE);
-        history = new HashMap<>(Map.of(blackP, new ArrayList<>(), whiteP, new ArrayList<>()));
     }
 
     private static void showboard(String id) {
@@ -97,14 +94,13 @@ public class JeuDeGo {
             }
 
             if (arg[1].equalsIgnoreCase("pass")) {
-                List<String> listMove = history.get(p);
 
-                if (!listMove.isEmpty() && listMove.get(listMove.size() - 1).equalsIgnoreCase("pass")){
+                if (p.getLastMove().equalsIgnoreCase("pass")){
                     System.out.println("=" + id + " resigns");
                     return null;
                 }
 
-                history.get(p).add(arg[1]);
+                p.addMove(arg[1]);
                 System.out.println("=" + id);
                 return p;
             }
@@ -119,7 +115,7 @@ public class JeuDeGo {
 
             Stones color = (p == blackP) ? Stones.BLACK : Stones.WHITE;
 
-            history.get(p).add(arg[1]);
+            p.addMove(arg[1]);
             goban.setStone(coord, color);
 
             p.setScore(p.getScore() + goban.captureStones(coord));
@@ -163,9 +159,8 @@ public class JeuDeGo {
         assert nb >= goban.getMinSize() && nb <= goban.getMaxSize();
 
         goban = new Goban(nb);
-        blackP.resetScore();
-        whiteP.resetScore();
-        history = new HashMap<>(Map.of(blackP, new ArrayList<>(), whiteP, new ArrayList<>()));
+        blackP.reset();
+        whiteP.reset();
     }
 
     private static boolean isInt(String s){
