@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d91ec27-cc2e-442d-ad90-c0d4a67c50e3" name="Changes" comment="Moved history to Player">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/go/Goban.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JeuDeGo/go/Goban.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/go/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JeuDeGo/go/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/ihm/JeuDeGo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JeuDeGo/ihm/JeuDeGo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/go/Goban.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/go/Goban.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/go/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/go/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ihm/JeuDeGo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ihm/JeuDeGo.java" afterDir="false" />
-    </list>
+    <list default="true" id="3d91ec27-cc2e-442d-ad90-c0d4a67c50e3" name="Changes" comment="Moved play to Player" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -112,7 +104,7 @@
       <workItem from="1703674339417" duration="64000" />
       <workItem from="1703674404384" duration="3663000" />
       <workItem from="1703884326202" duration="80000" />
-      <workItem from="1704278072166" duration="10578000" />
+      <workItem from="1704278072166" duration="11063000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1700491729525</created>
@@ -312,7 +304,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704292251066</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Moved play to Player">
+      <option name="closed" value="true" />
+      <created>1704294558148</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1704294558148</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,7 +344,8 @@
     <MESSAGE value="Updated play method" />
     <MESSAGE value="Minor changes" />
     <MESSAGE value="Moved history to Player" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved history to Player" />
+    <MESSAGE value="Moved play to Player" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved play to Player" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
