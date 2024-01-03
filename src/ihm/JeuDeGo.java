@@ -94,7 +94,7 @@ public class JeuDeGo {
 
             if(p == lastPlayer){
                 throw new RuntimeException();
-            };
+            }
 
             if (arg[1].equalsIgnoreCase("pass")) {
                 List<String> listMove = history.get(p);
