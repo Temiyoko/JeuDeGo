@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d91ec27-cc2e-442d-ad90-c0d4a67c50e3" name="Changes" comment="Minor changes" />
+    <list default="true" id="3d91ec27-cc2e-442d-ad90-c0d4a67c50e3" name="Changes" comment="Minor changes">
+      <change afterPath="$PROJECT_DIR$/src/ihm/IPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/player/AI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/player/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_15_10__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_15_10__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/go/Goban.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JeuDeGo/go/Goban.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/go/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/ihm/JeuDeGo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JeuDeGo/ihm/JeuDeGo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/go/Goban.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/go/Goban.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/go/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/player/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ihm/JeuDeGo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ihm/JeuDeGo.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +25,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>

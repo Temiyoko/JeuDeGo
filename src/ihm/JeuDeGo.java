@@ -2,17 +2,18 @@ package ihm;
 
 import go.Stones;
 import go.Goban;
-import go.Player;
+import player.Human;
+import player.AI;
 
 import java.util.*;
 
 
 public class JeuDeGo {
     private static Goban goban;
-    private static Player blackP, whiteP;
+    private static IPlayer blackP, whiteP;
     public static void main(String[] args) {
         initializeGame();
-        Player lastPlayer = whiteP;
+        IPlayer lastPlayer = whiteP;
 
         Scanner sc = new Scanner(System.in);
 
@@ -63,8 +64,8 @@ public class JeuDeGo {
 
     private static void initializeGame() {
         goban = new Goban();
-        blackP = new Player(Stones.BLACK);
-        whiteP = new Player(Stones.WHITE);
+        blackP = new Human(Stones.BLACK);
+        whiteP = new AI(Stones.WHITE);
     }
 
     private static void showboard(String id) {
@@ -72,12 +73,22 @@ public class JeuDeGo {
         System.out.println(goban.show(blackP, whiteP));
     }
 
-    public static Player play(String[] arg, String id, Player lastP){
+    private static int[] convert(String s){ //A1
+        char c = s.toUpperCase().charAt(0);
+        if (c == 'I') {
+            throw new IllegalArgumentException();
+        }
+        int col = c > 'I' ? (int) c - 'A' - 1 : (int) c - 'A';
+        int ligne = Integer.parseInt(s.substring(1)) - 1;
+        return new int[]{col,  ligne};
+    }
+
+    public static IPlayer play(String[] arg, String id, IPlayer lastP){
         try {
             if (!arg[0].equalsIgnoreCase("white") && !arg[0].equalsIgnoreCase("black")) {
                 throw new IllegalArgumentException();
             }
-            Player p = arg[0].equalsIgnoreCase("black") ? blackP : whiteP;
+            IPlayer p = arg[0].equalsIgnoreCase("black") ? blackP : whiteP;
 
             if(p == lastP){
                 throw new RuntimeException();
@@ -94,20 +105,6 @@ public class JeuDeGo {
             System.out.println("?" + id + " illegal move");
         }
         return lastP;
-    }
-
-    private static int[] convert(String s){
-        if(s.equalsIgnoreCase("pass")){
-            return new int[]{0, 0};
-        }
-
-        char c = s.toUpperCase().charAt(0);
-        if (c == 'I') {
-            throw new IllegalArgumentException();
-        }
-        int col = c > 'I' ? (int) c - 'A' - 1 : (int) c - 'A';
-        int ligne = Integer.parseInt(s.substring(1)) - 1;
-        return new int[]{col,  ligne};
     }
 
     private static void boardsize(String[] args, String id) {

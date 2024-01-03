@@ -1,5 +1,8 @@
 package go;
 
+import ihm.IPlayer;
+import player.Human;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -82,7 +85,7 @@ public class Goban {
         return cpt;
     }
 
-    public String show(Player p1, Player p2) {
+    public String show(IPlayer p1, IPlayer p2) {
         StringBuilder sb = new StringBuilder("   ");
         int cpt = size;
 
