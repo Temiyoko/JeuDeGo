@@ -110,14 +110,10 @@ public class JeuDeGo {
             if (!goban.isInBoard(coord)) {
                 throw new IllegalArgumentException();
             }
-            else if (!goban.isPlayable(coord)) {
+            else if (!goban.isPlayable(coord) || isSuicide(coord)) {
                 throw new RuntimeException();
             }
             Stones color = (p == blackP) ? Stones.BLACK : Stones.WHITE;
-
-            if (isSuicide(coord, color)) {
-                throw new RuntimeException();
-            }
 
             history.get(p).add(arg[1]);
             goban.setStone(coord, color);
@@ -135,14 +131,8 @@ public class JeuDeGo {
         return lastP;
     }
 
-    public static boolean isSuicide(int[] position, Stones color) {
-        goban.setStone(position, color);
-
-        boolean isSuicide = goban.getLiberties(position) == 0;
-
-        goban.setStone(position, null);
-
-        return isSuicide;
+    public static boolean isSuicide(int[] position) {
+        return goban.getLiberties(position) == 0;
     }
 
     private static void boardsize(String[] args, String id) {
