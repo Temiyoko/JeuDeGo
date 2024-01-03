@@ -35,6 +35,10 @@ public class Goban {
         return stones[pos[1]][pos[0]];
     }
 
+    public void setStones(int[] tab, Stones s) {
+        stones[tab[1]][tab[0]] = s;
+    }
+
     public boolean isInBoard(int[] tab){ // Ex : "P9"
         return tab[0] >= 0 && tab[0] < size && tab[1] >= 0 && tab[1] < size;
     }
@@ -80,10 +84,6 @@ public class Goban {
             }
         }
         return cpt;
-    }
-
-    public void setStones(int[] tab, Stones s) {
-        stones[tab[1]][tab[0]] = s;
     }
 
     public String show(Player p1, Player p2) {
