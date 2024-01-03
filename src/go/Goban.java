@@ -31,10 +31,6 @@ public class Goban {
         return MAXSIZE;
     }
 
-    public Stones getStone(int[] pos) {
-        return stones[pos[1]][pos[0]];
-    }
-
     public void setStone(int[] tab, Stones s) {
         stones[tab[1]][tab[0]] = s;
     }
@@ -43,13 +39,16 @@ public class Goban {
         return tab[0] >= 0 && tab[0] < size && tab[1] >= 0 && tab[1] < size;
     }
 
+    public boolean isPlayable(int[] tab){
+        return stones[tab[1]][tab[0]] == null;
+    }
+
     public int getLiberties(int[] position) {
         int liberties = 0;
 
         for (int[] adjPos : getAdjacentPositions(position)) {
-            Stones adjStone = getStone(adjPos);
 
-            if (isPlayable(adjPos)|| adjStone == getStone(position)) {
+            if (isPlayable(adjPos)) {
                 liberties++;
             }
         }
@@ -112,10 +111,6 @@ public class Goban {
         letters(sb);
 
         return sb.toString();
-    }
-
-    public boolean isPlayable(int[] tab){
-        return stones[tab[1]][tab[0]] == null;
     }
 
     private void letters(StringBuilder sb) {
