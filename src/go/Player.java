@@ -21,10 +21,6 @@ public class Player {
         this.score = score;
     }
 
-    public Stones getStone(){
-        return stoneColor;
-    }
-
     public String toString(){
         StringBuilder sb = new StringBuilder();
         String symbole = stoneColor == Stones.WHITE ? " (0) " : " (X) ";
