@@ -2,8 +2,6 @@ package ihm;
 
 import go.Stones;
 import go.Goban;
-import player.Human;
-import player.AI;
 
 import java.util.*;
 
@@ -12,7 +10,7 @@ public class JeuDeGo {
     private static Goban goban;
     private static IPlayer blackP, whiteP;
     public static void main(String[] args) {
-        initializeGame();
+        initializeGame(args);
         IPlayer lastPlayer = whiteP;
 
         Scanner sc = new Scanner(System.in);
@@ -63,7 +61,8 @@ public class JeuDeGo {
         sc.close();
     }
 
-    private static void initializeGame() {
+    private static void initializeGame(String[] args) {
+        assert isInt(args[0]);
         goban = new Goban();
         blackP = new Human(Stones.BLACK);
         whiteP = new Human(Stones.WHITE);
