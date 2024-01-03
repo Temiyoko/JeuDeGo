@@ -65,7 +65,7 @@ public class JeuDeGo {
     private static void initializeGame() {
         goban = new Goban();
         blackP = new Human(Stones.BLACK);
-        whiteP = new AI(Stones.WHITE);
+        whiteP = new Human(Stones.WHITE);
     }
 
     private static void showboard(String id) {

@@ -30,7 +30,7 @@ public class Human extends Player {
         addMove(move);
         board.setStone(coord, getStoneColor());
 
-        setScore(getScore() + board.captureStones(coord));
+        setScore(getScore() + board.captureStones(coord, getStoneColor()));
 
         System.out.println("=" + id);
         return true;

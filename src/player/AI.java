@@ -48,7 +48,7 @@ public class AI extends Player {
                 board.setStone(randomMove, getStoneColor());
 
                 // Update the score based on captured stones
-                setScore(getScore() + board.captureStones(randomMove));
+                setScore(getScore() + board.captureStones(randomMove, getStoneColor()));
 
                 // Print the result
                 System.out.println("=" + id);

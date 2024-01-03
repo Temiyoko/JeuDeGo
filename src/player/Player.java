@@ -14,6 +14,8 @@ public abstract class Player implements IPlayer {
 
     protected Player(Stones stoneColor) {
         this.stoneColor = stoneColor;
+        this.score = 0;
+        this.moveHistory = new ArrayList<>();
     }
 
     public int getScore() {
@@ -41,8 +43,8 @@ public abstract class Player implements IPlayer {
         moveHistory = new ArrayList<>();
     }
 
-    public static boolean isSuicide(int[] position, Goban board) {
-        return board.getLiberties(position) == 0;
+    public boolean isSuicide(int[] position, Goban board) {
+        return board.getLiberties(position, stoneColor) == 0;
     }
 
     public String toString(){
