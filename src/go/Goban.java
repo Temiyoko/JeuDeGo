@@ -39,7 +39,7 @@ public class Goban {
         stones[tab[1]][tab[0]] = s;
     }
 
-    public boolean isInBoard(int[] tab){ // Ex : "P9"
+    public boolean isInBoard(int[] tab){
         return tab[0] >= 0 && tab[0] < size && tab[1] >= 0 && tab[1] < size;
     }
 

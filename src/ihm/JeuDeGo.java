@@ -138,8 +138,7 @@ public class JeuDeGo {
     public static boolean isSuicide(int[] position, Stones color) {
         goban.setStone(position, color);
 
-        int liberties = goban.getLiberties(position);
-        boolean isSuicide = liberties == 0;
+        boolean isSuicide = goban.getLiberties(position) == 0;
 
         goban.setStone(position, null);
 
