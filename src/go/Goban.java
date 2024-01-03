@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Goban {
     private static final int MINSIZE = 1, MAXSIZE = 19;
-    private int size;
+    private final int size;
     private Stones[][] stones;
 
     public Goban(){
