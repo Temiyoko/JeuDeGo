@@ -72,55 +72,20 @@ public class JeuDeGo {
         System.out.println(goban.show(blackP, whiteP));
     }
 
-    private static int[] convert(String s){ //A1
-        char c = s.toUpperCase().charAt(0);
-        if (c == 'I') {
-            throw new IllegalArgumentException();
-        }
-        int col = c > 'I' ? (int) c - 'A' - 1 : (int) c - 'A';
-        int ligne = Integer.parseInt(s.substring(1)) - 1;
-        return new int[]{col,  ligne};
-    }
-
-    private static Player play(String[] arg, String id, Player lastPlayer) {
+    public static Player play(String[] arg, String id, Player lastP){
         try {
             if (!arg[0].equalsIgnoreCase("white") && !arg[0].equalsIgnoreCase("black")) {
                 throw new IllegalArgumentException();
             }
             Player p = arg[0].equalsIgnoreCase("black") ? blackP : whiteP;
 
-            if(p == lastPlayer){
+            if(p == lastP){
                 throw new RuntimeException();
             }
 
-            if (arg[1].equalsIgnoreCase("pass")) {
-
-                if (p.getLastMove().equalsIgnoreCase("pass")){
-                    System.out.println("=" + id + " resigns");
-                    return null;
-                }
-
-                p.addMove(arg[1]);
-                System.out.println("=" + id);
-                return p;
+            if(!p.play(arg[1], id, convert(arg[1]), goban)){
+                return null;
             }
-
-            int[] coord = convert(arg[1]);
-            if (!goban.isInBoard(coord)) {
-                throw new IllegalArgumentException();
-            }
-            else if (!goban.isPlayable(coord) || isSuicide(coord)) {
-                throw new RuntimeException();
-            }
-
-            Stones color = (p == blackP) ? Stones.BLACK : Stones.WHITE;
-
-            p.addMove(arg[1]);
-            goban.setStone(coord, color);
-
-            p.setScore(p.getScore() + goban.captureStones(coord));
-
-            System.out.println("=" + id);
             return p;
 
         } catch (IllegalArgumentException | ArrayIndexOutOfBoundsException e) {
@@ -128,11 +93,21 @@ public class JeuDeGo {
         } catch (RuntimeException e) {
             System.out.println("?" + id + " illegal move");
         }
-        return lastPlayer;
+        return lastP;
     }
 
-    private static boolean isSuicide(int[] position) {
-        return goban.getLiberties(position) == 0;
+    private static int[] convert(String s){
+        if(s.equalsIgnoreCase("pass")){
+            return new int[]{0, 0};
+        }
+
+        char c = s.toUpperCase().charAt(0);
+        if (c == 'I') {
+            throw new IllegalArgumentException();
+        }
+        int col = c > 'I' ? (int) c - 'A' - 1 : (int) c - 'A';
+        int ligne = Integer.parseInt(s.substring(1)) - 1;
+        return new int[]{col,  ligne};
     }
 
     private static void boardsize(String[] args, String id) {

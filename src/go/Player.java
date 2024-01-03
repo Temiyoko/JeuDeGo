@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class Player {
-    private Stones stoneColor;
+    private final Stones stoneColor;
     private int score;
     private List<String> moveHistory;
 
@@ -27,12 +27,45 @@ public class Player {
     }
 
     public String getLastMove(){
-        return moveHistory.isEmpty() ? null : moveHistory.get(moveHistory.size() - 1);
+        return moveHistory.isEmpty() ? " " : moveHistory.get(moveHistory.size() - 1);
     }
 
     public void reset() {
         score = 0;
         moveHistory = new ArrayList<>();
+    }
+
+    public boolean play(String move, String id, int[] coord, Goban board) {
+        if (move.equalsIgnoreCase("pass")) {
+
+            if (getLastMove().equalsIgnoreCase("pass")){
+                System.out.println("=" + id + " resigns");
+                return false;
+            }
+
+            addMove(move);
+            System.out.println("=" + id);
+            return true;
+        }
+
+        if (!board.isInBoard(coord)) {
+            throw new IllegalArgumentException();
+        }
+        else if (!board.isPlayable(coord) || isSuicide(coord, board)) {
+            throw new RuntimeException();
+        }
+
+        addMove(move);
+        board.setStone(coord, this.stoneColor);
+
+        setScore(getScore() + board.captureStones(coord));
+
+        System.out.println("=" + id);
+        return true;
+    }
+
+    private static boolean isSuicide(int[] position, Goban board) {
+        return board.getLiberties(position) == 0;
     }
 
     public String toString(){
