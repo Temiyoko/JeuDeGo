@@ -45,7 +45,7 @@ public class Goban {
         for (int[] adjPos : getAdjacentPositions(position)) {
             Stones adjStone = getStone(adjPos);
 
-            if (adjStone == null || adjStone == getStone(position)) {
+            if (isPlayable(adjPos)|| adjStone == getStone(position)) {
                 liberties++;
             }
         }
@@ -71,7 +71,7 @@ public class Goban {
     public int captureStones(int[] position) {
         int cpt = 0;
         for (int[] adjPos : getAdjacentPositions(position)) {
-            if (getStone(adjPos) != null) {
+            if (isPlayable(position)) {
                 int stoneLiberties = getLiberties(adjPos);
                 if (stoneLiberties == 0) {
                     setStones(adjPos, null);
