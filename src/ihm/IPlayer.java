@@ -4,13 +4,13 @@ import go.Goban;
 
 public interface IPlayer {
     boolean play(String move, String id, int[] coord, Goban board);
-    public void addMove(String move);
+    void addMove(String move);
 
-    public int getScore();
+    int getScore();
 
-    public void setScore(int score);
+    void setScore(int score);
 
-    public void reset();
+    void reset();
 
-    public String getLastMove();
+    String getLastMove();
 }
