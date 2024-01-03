@@ -98,7 +98,7 @@ public class JeuDeGo {
 
             if (arg[1].equalsIgnoreCase("pass")) {
                 List<String> listMove = history.get(p);
-                System.out.println(history + "liste des moves : " + listMove);
+
                 if (!listMove.isEmpty() && listMove.get(listMove.size() - 1).equalsIgnoreCase("pass")){
                     System.out.println("=" + id + " resigns");
                     return null;
@@ -177,4 +177,3 @@ public class JeuDeGo {
         }
     }
 }
-
