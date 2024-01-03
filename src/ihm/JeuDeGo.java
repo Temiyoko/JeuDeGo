@@ -115,9 +115,9 @@ public class JeuDeGo {
             }
             Stones color = (p == blackP) ? Stones.BLACK : Stones.WHITE;
 
-            if (isSuicide(coord, color)) {
+            /*if (isSuicide(coord, color)) {
                 throw new RuntimeException();
-            }
+            }*/
 
             history.get(p).add(arg[1]);
             goban.setStones(coord, color);

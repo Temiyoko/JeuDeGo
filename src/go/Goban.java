@@ -35,7 +35,7 @@ public class Goban {
         return stones[pos[1]][pos[0]];
     }
 
-    public void setStones(int[] tab, Stones s) {
+    public void setStone(int[] tab, Stones s) {
         stones[tab[1]][tab[0]] = s;
     }
 
@@ -78,7 +78,7 @@ public class Goban {
             if (isPlayable(position)) {
                 int stoneLiberties = getLiberties(adjPos);
                 if (stoneLiberties == 0) {
-                    setStones(adjPos, null);
+                    setStone(adjPos, null);
                     cpt++;
                 }
             }
