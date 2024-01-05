@@ -11,15 +11,22 @@ import java.util.*;
 public class JeuDeGo {
     private static Goban goban;
     private static IPlayer blackP, whiteP;
+    private static IPlayer lastPlayer, currentPlayer;
+    private static boolean isAITurn;
+
     public static void main(String[] args) {
         initializeGame(args);
-        IPlayer lastPlayer = whiteP;
 
         Scanner sc = new Scanner(System.in);
 
-        while(sc.hasNextLine()) {
-            String input = sc.nextLine().trim();
-            String[] arguments = input.split("\\s+");
+        while(true) {
+            String input;
+            String[] arguments = new String[]{"play", currentPlayer == blackP ? "black" : "white", "a1"};
+
+            if (!isAITurn) {
+                input = sc.nextLine().trim();
+                arguments = input.split("\\s+");
+            }
 
             String id, cmd;
             String[] arg;
@@ -34,9 +41,11 @@ public class JeuDeGo {
                 cmd = arguments[0];
                 arg = Arrays.copyOfRange(arguments, 1, arguments.length);
             }
+
             switch (cmd) {
                 case "quit":
                     System.out.println("=" + id);
+                    sc.close();
                     return;
                 case "boardsize":
                     boardsize(arg, id);
@@ -51,8 +60,13 @@ public class JeuDeGo {
                 case "play":
                     lastPlayer = play(arg, id, lastPlayer);
                     if (lastPlayer == null) {
+                        sc.close();
                         return;
                     }
+
+                    currentPlayer = lastPlayer == whiteP ? blackP : whiteP;
+                    isAITurn = currentPlayer.getClass() == AI.class;
+
                     showboard(id);
                     break;
                 default:
@@ -60,7 +74,6 @@ public class JeuDeGo {
                     break;
             }
         }
-        sc.close();
     }
 
     private static void initializeGame(String[] args) {
@@ -70,6 +83,10 @@ public class JeuDeGo {
         goban = new Goban();
         blackP = nbAI == 2 ? new AI(Stones.BLACK) : new Human(Stones.BLACK);
         whiteP = nbAI == 0 ? new Human(Stones.WHITE) : new AI(Stones.WHITE);
+        lastPlayer = whiteP;
+        currentPlayer = blackP;
+        isAITurn = nbAI == 2;
+        boardsize(new String[]{"3"}, "2");
     }
 
     private static void showboard(String id) {
@@ -141,6 +158,9 @@ public class JeuDeGo {
         goban = new Goban(nb);
         blackP.reset();
         whiteP.reset();
+
+        lastPlayer = whiteP;
+        currentPlayer = blackP;
     }
 
     private static boolean isInt(String s){
