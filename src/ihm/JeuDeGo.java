@@ -2,6 +2,7 @@ package ihm;
 
 import go.Stones;
 import go.Goban;
+import player.AI;
 import player.Human;
 
 import java.util.*;
@@ -64,9 +65,10 @@ public class JeuDeGo {
 
     private static void initializeGame(String[] args) {
         assert isInt(args[0]);
+        int nbAI = Integer.parseInt(args[0]);
         goban = new Goban();
-        blackP = new Human(Stones.BLACK);
-        whiteP = new Human(Stones.WHITE);
+        blackP = nbAI == 2 ? new AI(Stones.BLACK) : new Human(Stones.BLACK);
+        whiteP = nbAI == 0 ? new Human(Stones.WHITE) : new AI(Stones.WHITE);
     }
 
     private static void showboard(String id) {
