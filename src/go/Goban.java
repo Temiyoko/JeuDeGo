@@ -84,8 +84,12 @@ public class Goban {
         return liberties;
     }
 
-    public int captureStones(int[] position, Stones color) {
-        int cpt = 0;
+    public int countCaptureStones(int[] position, Stones color){
+        return stonesToCapture(position, color).size();
+    }
+
+    public List<int[]> stonesToCapture(int[] position, Stones color) {
+
         Stones advColor = color == Stones.BLACK ? Stones.WHITE : Stones.BLACK;
         List<int[]> stonesToRemove = new ArrayList<>();
         boolean[][] visited = new boolean[size][size];
@@ -98,15 +102,17 @@ public class Goban {
                 captureGroup(adjacentPosition, advColor, group, visited);
                 if (getLiberties(adjacentPosition, advColor) == 0) {
                     stonesToRemove.addAll(group);
-                    cpt += group.size();
                 }
             }
         }
 
-        for (int[] pos : stonesToRemove) {
+        return stonesToRemove;
+    }
+
+    public void captureStones(int[] position, Stones color) {
+        for (int[] pos : stonesToCapture(position, color)) {
             setStone(pos, null);
         }
-        return cpt;
     }
 
     private void captureGroup(int[] position, Stones color, List<int[]> group, boolean[][] visited) {
