@@ -2,6 +2,7 @@ package ihm;
 
 import go.Stones;
 import go.Goban;
+import player.Human;
 
 import java.util.*;
 

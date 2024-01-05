@@ -4,11 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d91ec27-cc2e-442d-ad90-c0d4a67c50e3" name="Changes" comment="Bugs fixed">
+    <list default="true" id="3d91ec27-cc2e-442d-ad90-c0d4a67c50e3" name="Changes" comment="Added few classes : IPlayer Player Human &amp; AI and changed play method in the JeuDeGo">
+      <change afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/go/Goban.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/go/Stones.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ihm/IPlayer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ihm/JeuDeGo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/player/AI.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/player/Human.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/player/Player.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_21_23__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_21_23__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_21_23__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_21_23__Changes_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/go/Goban.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JeuDeGo/go/Goban.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/player/Human.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JeuDeGo/player/Human.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/go/Goban.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/go/Goban.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ihm/JeuDeGo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ihm/JeuDeGo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -310,7 +321,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704316897096</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Added few classes : IPlayer Player Human &amp; AI and changed play method in the JeuDeGo">
+      <option name="closed" value="true" />
+      <created>1704320639605</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1704320639605</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,7 +362,8 @@
     <MESSAGE value="Minor changes" />
     <MESSAGE value="Coded getLiberties, started on catching stones" />
     <MESSAGE value="Bugs fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bugs fixed" />
+    <MESSAGE value="Added few classes : IPlayer Player Human &amp; AI and changed play method in the JeuDeGo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added few classes : IPlayer Player Human &amp; AI and changed play method in the JeuDeGo" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
