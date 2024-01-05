@@ -4,6 +4,7 @@ import go.Goban;
 import go.Stones;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
@@ -23,7 +24,7 @@ public class AI extends Player {
             int[] randomMove = legalMoves.get(randomIndex);
 
             board.setStone(randomMove, getStoneColor());
-
+            System.out.println("L'ia a jouer en " + Arrays.toString(randomMove));
             setScore(getScore() + board.countCaptureStones(randomMove, getStoneColor()));
             board.captureStones(randomMove, getStoneColor());
 
