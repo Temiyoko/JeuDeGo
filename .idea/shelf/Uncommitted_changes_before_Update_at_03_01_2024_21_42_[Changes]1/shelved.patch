@@ -1,0 +1,154 @@
+Index: src/ihm/IPlayer.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package ihm;\r\n\r\nimport go.Goban;\r\n\r\npublic interface IPlayer {\r\n    boolean play(String move, String id, int[] coord, Goban board);\r\n    public void addMove(String move);\r\n\r\n    public int getScore();\r\n\r\n    public void setScore(int score);\r\n\r\n    public void reset();\r\n\r\n    public String getLastMove();\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/ihm/IPlayer.java b/src/ihm/IPlayer.java
+--- a/src/ihm/IPlayer.java	
++++ b/src/ihm/IPlayer.java	
+@@ -4,13 +4,13 @@
+ 
+ public interface IPlayer {
+     boolean play(String move, String id, int[] coord, Goban board);
+-    public void addMove(String move);
++    void addMove(String move);
+ 
+-    public int getScore();
++    int getScore();
+ 
+-    public void setScore(int score);
++    void setScore(int score);
+ 
+-    public void reset();
++    void reset();
+ 
+-    public String getLastMove();
++    String getLastMove();
+ }
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"3d91ec27-cc2e-442d-ad90-c0d4a67c50e3\" name=\"Changes\" comment=\"Minor changes\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/ihm/IPlayer.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/player/AI.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/player/Player.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_15_10__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_15_10__Changes_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/out/production/JeuDeGo/go/Goban.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/JeuDeGo/go/Goban.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/out/production/JeuDeGo/go/Player.class\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/out/production/JeuDeGo/ihm/JeuDeGo.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/JeuDeGo/ihm/JeuDeGo.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/go/Goban.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/go/Goban.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/go/Player.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/player/Human.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/ihm/JeuDeGo.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/ihm/JeuDeGo.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Interface\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitToolBoxStore\">\r\n    <option name=\"projectConfigVersion\" value=\"5\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 2\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2YRcAbZcYvHZ3GRjuiwnYpJEv0b\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n    <option name=\"showMembers\" value=\"true\" />\r\n    <option name=\"showVisibilityIcons\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,\r\n    &quot;Application.JeuDeGo.executor&quot;: &quot;Run&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\r\n    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,\r\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;F:/Documents/Cours/BUT2/Periode B/Quali dev/JeuDeGo&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"jdk-17.0.9-corretto-17.0.9-f644763e9732-ebaef533\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"3d91ec27-cc2e-442d-ad90-c0d4a67c50e3\" name=\"Changes\" comment=\"\" />\r\n      <created>1700491693659</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1700491693659</updated>\r\n      <workItem from=\"1700491695388\" duration=\"2789000\" />\r\n      <workItem from=\"1700513269062\" duration=\"308000\" />\r\n      <workItem from=\"1700566258443\" duration=\"2321000\" />\r\n      <workItem from=\"1700571663772\" duration=\"3810000\" />\r\n      <workItem from=\"1700771234740\" duration=\"1970000\" />\r\n      <workItem from=\"1700773241060\" duration=\"3114000\" />\r\n      <workItem from=\"1700776406119\" duration=\"922000\" />\r\n      <workItem from=\"1700815808165\" duration=\"3440000\" />\r\n      <workItem from=\"1700827085642\" duration=\"40000\" />\r\n      <workItem from=\"1700827134845\" duration=\"150000\" />\r\n      <workItem from=\"1700827299716\" duration=\"1201000\" />\r\n      <workItem from=\"1701100548734\" duration=\"10000\" />\r\n      <workItem from=\"1701176302453\" duration=\"2538000\" />\r\n      <workItem from=\"1701180295399\" duration=\"641000\" />\r\n      <workItem from=\"1701436027769\" duration=\"5000\" />\r\n      <workItem from=\"1701782135250\" duration=\"814000\" />\r\n      <workItem from=\"1701783023148\" duration=\"6112000\" />\r\n      <workItem from=\"1701854573996\" duration=\"235000\" />\r\n      <workItem from=\"1703526924400\" duration=\"434000\" />\r\n      <workItem from=\"1703672787164\" duration=\"617000\" />\r\n      <workItem from=\"1703673427321\" duration=\"35000\" />\r\n      <workItem from=\"1703673473959\" duration=\"412000\" />\r\n      <workItem from=\"1703674040475\" duration=\"269000\" />\r\n      <workItem from=\"1703674339417\" duration=\"64000\" />\r\n      <workItem from=\"1703674404384\" duration=\"3663000\" />\r\n      <workItem from=\"1703884326202\" duration=\"80000\" />\r\n      <workItem from=\"1704278072166\" duration=\"7464000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Initial commit\">\r\n      <created>1700491729525</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700491729525</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Initial commit\">\r\n      <created>1700491740280</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700491740280</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Coded boardsize\">\r\n      <created>1700501101664</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700501101664</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Coded boardsize\">\r\n      <created>1700501119814</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700501119814</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Updated structure and coded showboard\">\r\n      <created>1700577007684</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700577007684</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Finish showboard + updated Player\">\r\n      <created>1700777327183</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700777327183</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Finish showboard + updated Player\">\r\n      <created>1700815847777</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700815847777</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Handled numbers before command\">\r\n      <created>1700823904012</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700823904012</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Finished first sprint\">\r\n      <created>1701176689785</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1701176689785</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"Coded clear_board\">\r\n      <created>1701782905290</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1701782905290</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"Small changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703674482101</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703674482101</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"Finished Play method\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703704617785</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703704617785</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"Updated play method + main\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703876973300</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703876973300</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00014\" summary=\"Updated play method\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703877003794</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703877003794</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00015\" summary=\"Updated play method\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703883659541</created>\r\n      <option name=\"number\" value=\"00015\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703883659541</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00016\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704278332968</created>\r\n      <option name=\"number\" value=\"00016\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00016\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704278332968</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00017\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704278596647</created>\r\n      <option name=\"number\" value=\"00017\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00017\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704278596647</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00018\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704279556279</created>\r\n      <option name=\"number\" value=\"00018\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00018\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704279556279</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00019\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704282948073</created>\r\n      <option name=\"number\" value=\"00019\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00019\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704282948073</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00020\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704282970315</created>\r\n      <option name=\"number\" value=\"00020\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00020\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704282970315</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00021\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704284955988</created>\r\n      <option name=\"number\" value=\"00021\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00021\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704284955988</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00022\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704290061031</created>\r\n      <option name=\"number\" value=\"00022\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00022\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704290061031</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00023\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704290304364</created>\r\n      <option name=\"number\" value=\"00023\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00023\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704290304364</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00024\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704290761352</created>\r\n      <option name=\"number\" value=\"00024\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00024\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704290761352</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"25\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n    <MESSAGE value=\"Initial commit\" />\r\n    <MESSAGE value=\"Coded boardsize\" />\r\n    <MESSAGE value=\"Updated structure and coded showboard\" />\r\n    <MESSAGE value=\"Finish showboard + updated Player\" />\r\n    <MESSAGE value=\"Handled numbers before command\" />\r\n    <MESSAGE value=\"Finished first sprint\" />\r\n    <MESSAGE value=\"Coded clear_board\" />\r\n    <MESSAGE value=\"Small changes\" />\r\n    <MESSAGE value=\"Finished Play method\" />\r\n    <MESSAGE value=\"Updated play method + main\" />\r\n    <MESSAGE value=\"Updated play method\" />\r\n    <MESSAGE value=\"Minor changes\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Minor changes\" />\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -4,18 +4,15 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="3d91ec27-cc2e-442d-ad90-c0d4a67c50e3" name="Changes" comment="Minor changes">
+-      <change afterPath="$PROJECT_DIR$/src/ihm/IPlayer.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/player/AI.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/player/Player.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_15_10__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_15_10__Changes_.xml" afterDir="false" />
++    <list default="true" id="3d91ec27-cc2e-442d-ad90-c0d4a67c50e3" name="Changes" comment="Added few classes : IPlayer Player Human &amp; AI and changed play method in the JeuDeGo">
++      <change afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.project" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/go/Goban.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JeuDeGo/go/Goban.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/go/Player.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/go/Stones.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JeuDeGo/go/Stones.class" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/ihm/JeuDeGo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JeuDeGo/ihm/JeuDeGo.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/go/Goban.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/go/Goban.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/go/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/player/Human.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/ihm/JeuDeGo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ihm/JeuDeGo.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/ihm/IPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ihm/IPlayer.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -301,7 +298,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1704290761352</updated>
+     </task>
+-    <option name="localTasksCounter" value="25" />
++    <task id="LOCAL-00025" summary="Added few classes : IPlayer Player Human &amp; AI and changed play method in the JeuDeGo">
++      <option name="closed" value="true" />
++      <created>1704313328187</created>
++      <option name="number" value="00025" />
++      <option name="presentableId" value="LOCAL-00025" />
++      <option name="project" value="LOCAL" />
++      <updated>1704313328187</updated>
++    </task>
++    <option name="localTasksCounter" value="26" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -332,7 +337,8 @@
+     <MESSAGE value="Updated play method + main" />
+     <MESSAGE value="Updated play method" />
+     <MESSAGE value="Minor changes" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Minor changes" />
++    <MESSAGE value="Added few classes : IPlayer Player Human &amp; AI and changed play method in the JeuDeGo" />
++    <option name="LAST_COMMIT_MESSAGE" value="Added few classes : IPlayer Player Human &amp; AI and changed play method in the JeuDeGo" />
+   </component>
+   <component name="XSLT-Support.FileAssociations.UIState">
+     <expand />
+Index: .project
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.project b/.project
+new file mode 100644
+--- /dev/null	
++++ b/.project	
+@@ -0,0 +1,17 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<projectDescription>
++	<name>JeuDeGo</name>
++	<comment></comment>
++	<projects>
++	</projects>
++	<buildSpec>
++		<buildCommand>
++			<name>org.eclipse.jdt.core.javabuilder</name>
++			<arguments>
++			</arguments>
++		</buildCommand>
++	</buildSpec>
++	<natures>
++		<nature>org.eclipse.jdt.core.javanature</nature>
++	</natures>
++</projectDescription>
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" project-jdk-name=\"17\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	
++++ b/.idea/misc.xml	
+@@ -1,5 +1,9 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="PWA">
++    <option name="enabled" value="true" />
++    <option name="wasEnabledAtLeastOnce" value="true" />
++  </component>
+   <component name="ProjectRootManager" version="2" project-jdk-name="17" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+Index: .classpath
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.classpath b/.classpath
+new file mode 100644
+--- /dev/null	
++++ b/.classpath	
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<classpath>
++	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
++	<classpathentry kind="src" path="src"/>
++	<classpathentry kind="output" path="out/production/JeuDeGo"/>
++</classpath>

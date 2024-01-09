@@ -24,7 +24,7 @@ public class AI extends Player {
             int[] randomMove = legalMoves.get(randomIndex);
 
             board.setStone(randomMove, getStoneColor());
-
+            System.out.println("L'ia a jouer en " + Arrays.toString(randomMove));
             setScore(getScore() + board.countCaptureStones(randomMove, getStoneColor()));
             board.captureStones(randomMove, getStoneColor());
 
