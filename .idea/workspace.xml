@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d91ec27-cc2e-442d-ad90-c0d4a67c50e3" name="Changes" comment="Fixed liberties bug ?">
+    <list default="true" id="3d91ec27-cc2e-442d-ad90-c0d4a67c50e3" name="Changes" comment="Changed structure and added optional param">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/ihm/JeuDeGo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JeuDeGo/ihm/JeuDeGo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/go/Goban.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JeuDeGo/go/Goban.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/go/ihm/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JeuDeGo/go/ihm/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/player/AI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JeuDeGo/player/AI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/go/Goban.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/go/Goban.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ihm/IPlayer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ihm/JeuDeGo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/go/ihm/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/player/AI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/player/AI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/player/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/player/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/go/ihm/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/go/ihm/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +166,7 @@
       <workItem from="1704487093126" duration="6394000" />
       <workItem from="1704809359791" duration="1136000" />
       <workItem from="1704813620147" duration="3000" />
-      <workItem from="1704834419216" duration="1755000" />
+      <workItem from="1704834419216" duration="2617000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1700491729525</created>
@@ -441,7 +438,23 @@
       <option name="project" value="LOCAL" />
       <updated>1704830489913</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Changed structure and added optional param">
+      <option name="closed" value="true" />
+      <created>1704836449739</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1704836449739</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Changed structure and added optional param">
+      <option name="closed" value="true" />
+      <created>1704836468898</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1704836468898</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -482,7 +495,8 @@
     <MESSAGE value="Moved IPlayer to go package, moved player history to Goban, history now takes int[], reduced params of play() and fixed players" />
     <MESSAGE value="Cleaned files" />
     <MESSAGE value="Fixed liberties bug ?" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed liberties bug ?" />
+    <MESSAGE value="Changed structure and added optional param" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed structure and added optional param" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

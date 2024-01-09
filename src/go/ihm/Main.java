@@ -14,6 +14,8 @@ public class Main {
     private static IPlayer blackP, whiteP;
     private static IPlayer lastPlayer, currentPlayer;
     private static boolean isAITurn;
+    private static Map<IPlayer, Integer> passCount;
+
 
     public static void main(String[] args) {
         initializeGame(args);
@@ -85,6 +87,7 @@ public class Main {
         blackP = nbAI == 2 ? new AI(Stones.BLACK) : new Human(Stones.BLACK);
         whiteP = nbAI == 0 ? new Human(Stones.WHITE) : new AI(Stones.WHITE);
         goban = new Goban(blackP, whiteP);
+        passCount = new HashMap<>(Map.of(blackP, 0, whiteP, 0));
 
         lastPlayer = whiteP;
         currentPlayer = blackP;
@@ -127,8 +130,12 @@ public class Main {
             }
 
             if(!p.play(convert(arg[1]), goban)){
-                System.out.println("=" + id + " resigns");
-                return null;
+                System.out.println("=" + id + " pass");
+                passCount.put(p, passCount.get(p) + 1);
+                if(passCount.get(p) == 2){
+                    return null;
+                }
+                return p;
             }
             System.out.println("=" + id);
             return p;
@@ -167,6 +174,7 @@ public class Main {
         blackP.reset();
         whiteP.reset();
         goban = new Goban(nb, blackP, whiteP);
+        passCount = new HashMap<>(Map.of(blackP, 0, whiteP, 0));
 
         lastPlayer = whiteP;
         currentPlayer = blackP;
