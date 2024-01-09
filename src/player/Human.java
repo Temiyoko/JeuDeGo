@@ -12,13 +12,8 @@ public class Human extends Player {
 
     public boolean play(int[] coord, Goban board) {
         if (Arrays.equals(coord, new int[]{-1, -1})) {
-
-            if (Arrays.equals(board.getLastMove(this), new int[]{-1, -1})){
-                return false;
-            }
-
             board.addMove(this, coord);
-            return true;
+            return false;
         }
 
         if (!board.isInBoard(coord)) {

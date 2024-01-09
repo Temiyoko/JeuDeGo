@@ -4,7 +4,6 @@ import go.Goban;
 import go.Stones;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
@@ -28,14 +27,12 @@ public class AI extends Player {
             board.captureStones(randomMove, getStoneColor());
 
             board.addMove(this, randomMove);
+            return true;
         }
         else {
-            if (Arrays.equals(board.getLastMove(this), new int[]{-1, -1})) {
-                return false;
-            }
             board.addMove(this, new int[]{-1, -1});
+            return false;
         }
-        return true;
     }
 
     private List<int[]> getLegalMoves(Goban board) {

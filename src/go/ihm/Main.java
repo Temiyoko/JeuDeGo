@@ -1,4 +1,4 @@
-package ihm;
+package go.ihm;
 
 import go.Stones;
 import go.Goban;
@@ -9,7 +9,7 @@ import go.IPlayer;
 import java.util.*;
 
 
-public class JeuDeGo {
+public class Main {
     private static Goban goban;
     private static IPlayer blackP, whiteP;
     private static IPlayer lastPlayer, currentPlayer;
@@ -78,6 +78,7 @@ public class JeuDeGo {
     }
 
     private static void initializeGame(String[] args) {
+        String[] arg = Arrays.copyOfRange(args, 0, args.length);
         assert isInt(args[0]);
         int nbAI = Integer.parseInt(args[0]);
 
@@ -89,7 +90,10 @@ public class JeuDeGo {
         currentPlayer = blackP;
         isAITurn = nbAI == 2;
 
-        boardsize(new String[]{"6"}, "");
+        if(arg.length > 1){
+            assert isInt(args[1]);
+            boardsize(new String[]{arg[1]}, "");
+        }
     }
 
     private static void showboard(String id) {
