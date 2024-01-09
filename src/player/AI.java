@@ -4,6 +4,7 @@ import go.Goban;
 import go.Stones;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
@@ -16,7 +17,7 @@ public class AI extends Player {
     }
 
     @Override
-    public boolean play(String move, String id, int[] coord, Goban board) {
+    public boolean play(int[] coord, Goban board) {
         List<int[]> legalMoves = getLegalMoves(board);
         if (!legalMoves.isEmpty()) {
             int randomIndex = random.nextInt(legalMoves.size());
@@ -27,31 +28,16 @@ public class AI extends Player {
             setScore(getScore() + board.countCaptureStones(randomMove, getStoneColor()));
             board.captureStones(randomMove, getStoneColor());
 
-            System.out.println(convertBack(randomMove));
-            addMove(convertBack(randomMove));
+            board.addMove(this, randomMove);
         }
         else {
-            if (getLastMove().equalsIgnoreCase("pass")) {
-                System.out.println("=" + id + " resigns");
+            if (Arrays.equals(board.getLastMove(this), new int[]{-1, -1})) {
                 return false;
             }
-            addMove("pass");
+            board.addMove(this, new int[]{-1, -1});
         }
-        System.out.println("=" + id);
         return true;
     }
-
-    private static String convertBack(int[] coords) {
-        char colChar = (char) (coords[0] >= 8 ? 'A' + coords[0] + 1 : 'A' + coords[0]);
-        int row = coords[1] + 1;
-
-        if (colChar >= 'I') {
-            colChar++;
-        }
-
-        return "" + colChar + row;
-    }
-
 
     private List<int[]> getLegalMoves(Goban board) {
         List<int[]> legalMoves = new ArrayList<>();

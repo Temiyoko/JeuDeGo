@@ -4,6 +4,7 @@ import go.Stones;
 import go.Goban;
 import player.AI;
 import player.Human;
+import go.IPlayer;
 
 import java.util.*;
 
@@ -80,13 +81,13 @@ public class JeuDeGo {
         assert isInt(args[0]);
         int nbAI = Integer.parseInt(args[0]);
 
-        goban = new Goban();
         blackP = nbAI == 2 ? new AI(Stones.BLACK) : new Human(Stones.BLACK);
         whiteP = nbAI == 0 ? new Human(Stones.WHITE) : new AI(Stones.WHITE);
+        goban = new Goban(blackP, whiteP);
+
         lastPlayer = whiteP;
         currentPlayer = blackP;
         isAITurn = nbAI == 2;
-        boardsize(new String[]{"3"}, "2");
     }
 
     private static void showboard(String id) {
@@ -96,7 +97,7 @@ public class JeuDeGo {
 
     private static int[] convert(String s){
         if(s.equalsIgnoreCase("pass")){
-            return new int[]{0, 0};
+            return new int[]{-1, -1};
         }
 
         char c = s.toUpperCase().charAt(0);
@@ -119,9 +120,11 @@ public class JeuDeGo {
                 throw new RuntimeException();
             }
 
-            if(!p.play(arg[1], id, convert(arg[1]), goban)){
+            if(!p.play(convert(arg[1]), goban)){
+                System.out.println("=" + id + " resigns");
                 return null;
             }
+            System.out.println("=" + id);
             return p;
 
         } catch (IllegalArgumentException | ArrayIndexOutOfBoundsException e) {
@@ -155,9 +158,9 @@ public class JeuDeGo {
     private static void resetGame(int nb) {
         assert nb >= goban.getMinSize() && nb <= goban.getMaxSize();
 
-        goban = new Goban(nb);
         blackP.reset();
         whiteP.reset();
+        goban = new Goban(nb, blackP, whiteP);
 
         lastPlayer = whiteP;
         currentPlayer = blackP;

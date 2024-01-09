@@ -1,25 +1,26 @@
 package go;
 
-import ihm.IPlayer;
-
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Goban {
     private static final int[][] DIRECTIONS = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
     private static final int MINSIZE = 1, MAXSIZE = 19;
     private final int size;
     private Stones[][] stones;
+    private Map<IPlayer, List<int[]>> history;
 
-    public Goban(){
-        this.size = MAXSIZE;
-        this.stones = new Stones[MAXSIZE][MAXSIZE];
+    public Goban(IPlayer b, IPlayer w){
+        this(MAXSIZE, b, w);
     }
 
-    public Goban(int n){
+    public Goban(int n, IPlayer b, IPlayer w){
         assert n >= MINSIZE && n <= MAXSIZE;
         this.size = n;
         this.stones = new Stones[n][n];
+        this.history = new HashMap<>(Map.of(b, new ArrayList<>(), w, new ArrayList<>()));
     }
 
     public int getSize(){
@@ -43,6 +44,15 @@ public class Goban {
         stones[position[1]][position[0]] = s;
     }
 
+    public int[] getLastMove(IPlayer p){
+        List<int[]> pMoves = history.get(p);
+        return pMoves.isEmpty() ? null : pMoves.get(pMoves.size() - 1);
+    }
+
+    public void addMove(IPlayer p, int[] move){
+        history.get(p).add(move);
+    }
+
     public boolean isInBoard(int[] tab){
         return tab[0] >= 0 && tab[0] < size && tab[1] >= 0 && tab[1] < size;
     }
@@ -55,10 +65,7 @@ public class Goban {
         if (!isInBoard(position)) {
             return 0;
         }
-
-        int liberties = countLiberties(position, color, new boolean[size][size]);
-
-        return liberties;
+        return countLiberties(position, color, new boolean[size][size]);
     }
 
     private int countLiberties(int[] position, Stones color, boolean[][] visited) {

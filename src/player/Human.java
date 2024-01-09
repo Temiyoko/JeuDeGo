@@ -3,21 +3,21 @@ package player;
 import go.Stones;
 import go.Goban;
 
+import java.util.Arrays;
+
 public class Human extends Player {
     public Human(Stones c){
         super(c);
     }
 
-    public boolean play(String move, String id, int[] coord, Goban board) {
-        if (move.equalsIgnoreCase("pass")) {
+    public boolean play(int[] coord, Goban board) {
+        if (Arrays.equals(coord, new int[]{-1, -1})) {
 
-            if (getLastMove().equalsIgnoreCase("pass")){
-                System.out.println("=" + id + " resigns");
+            if (Arrays.equals(board.getLastMove(this), new int[]{-1, -1})){
                 return false;
             }
 
-            addMove(move);
-            System.out.println("=" + id);
+            board.addMove(this, coord);
             return true;
         }
 
@@ -28,7 +28,7 @@ public class Human extends Player {
             throw new RuntimeException();
         }
 
-        addMove(move);
+       board.addMove(this, coord);
         board.setStone(coord, getStoneColor());
 
         setScore(getScore() + board.countCaptureStones(coord, getStoneColor()));
