@@ -41,11 +41,6 @@ public class Goban {
         stones[position[1]][position[0]] = s;
     }
 
-    public int[] getLastMove(IPlayer p){
-        List<int[]> pMoves = history.get(p);
-        return pMoves.isEmpty() ? null : pMoves.get(pMoves.size() - 1);
-    }
-
     public void addMove(IPlayer p, int[] move){
         history.get(p).add(move);
     }
