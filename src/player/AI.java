@@ -24,7 +24,6 @@ public class AI extends Player {
             int[] randomMove = legalMoves.get(randomIndex);
 
             board.setStone(randomMove, getStoneColor());
-            System.out.println("L'ia a jouer en " + Arrays.toString(randomMove));
             setScore(getScore() + board.countCaptureStones(randomMove, getStoneColor()));
             board.captureStones(randomMove, getStoneColor());
 
@@ -46,7 +45,7 @@ public class AI extends Player {
             for (int j = 0; j < board.getSize(); ++j) {
                 int[] move = new int[]{i, j};
 
-                if (board.isPlayable(move) && !isSuicide(move, board)) {
+                if (board.isPlayable(move) && !board.isSuicide(move, getStoneColor())) {
                     legalMoves.add(move);
                 }
             }

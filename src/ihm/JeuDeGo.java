@@ -88,6 +88,8 @@ public class JeuDeGo {
         lastPlayer = whiteP;
         currentPlayer = blackP;
         isAITurn = nbAI == 2;
+
+        boardsize(new String[]{"6"}, "");
     }
 
     private static void showboard(String id) {

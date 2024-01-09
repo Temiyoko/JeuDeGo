@@ -24,11 +24,11 @@ public class Human extends Player {
         if (!board.isInBoard(coord)) {
             throw new IllegalArgumentException();
         }
-        else if (!board.isPlayable(coord) || isSuicide(coord, board)) {
+        else if (!board.isPlayable(coord) || board.isSuicide(coord, getStoneColor())) {
             throw new RuntimeException();
         }
 
-       board.addMove(this, coord);
+        board.addMove(this, coord);
         board.setStone(coord, getStoneColor());
 
         setScore(getScore() + board.countCaptureStones(coord, getStoneColor()));

@@ -1,9 +1,6 @@
 package go;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Goban {
     private static final int[][] DIRECTIONS = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
@@ -58,7 +55,14 @@ public class Goban {
     }
 
     public boolean isPlayable(int[] tab){
-        return stones[tab[1]][tab[0]] == null;
+        return getStone(tab) == null;
+    }
+
+    public boolean isSuicide(int[] position, Stones color) {
+        setStone(position, color);
+        boolean suicide = ((getLiberties(position, color) == 0) && (countCaptureStones(position, color) == 0));
+        setStone(position, null);
+        return suicide;
     }
 
     public int getLiberties(int[] position, Stones color) {
@@ -69,23 +73,25 @@ public class Goban {
     }
 
     private int countLiberties(int[] position, Stones color, boolean[][] visited) {
-        if (!isInBoard(position)|| visited[position[1]][position[0]]) {
+        if (!isInBoard(position) || visited[position[1]][position[0]]) {
             return 0;
         }
+        visited[position[1]][position[0]] = true;
 
         if (getStone(position) == null) {
             return 1;
         }
-
-        if (getStone(position) != color) {
+        else if (getStone(position) != color) {
             return 0;
         }
-
-        visited[position[1]][position[0]] = true;
         int liberties = 0;
 
         for (int[] dir : DIRECTIONS) {
-            liberties += countLiberties(new int[]{position[0] + dir[0], position[1] + dir[1]}, color, visited);
+            int[] newPos = new int[]{position[0] + dir[0], position[1] + dir[1]};
+
+            if (isInBoard(newPos)){
+                liberties += countLiberties(newPos, color, visited);
+            }
         }
 
         return liberties;

@@ -29,13 +29,6 @@ public abstract class Player implements IPlayer {
         score = 0;
     }
 
-    public boolean isSuicide(int[] position, Goban board) {
-        board.setStone(position, getStoneColor());
-        boolean suicide = (board.getLiberties(position, stoneColor) == 0) && (board.countCaptureStones(position, getStoneColor()) == 0);
-        board.setStone(position, null);
-        return suicide;
-    }
-
     public String toString(){
         StringBuilder sb = new StringBuilder();
         String symbole = stoneColor == Stones.WHITE ? " (0) " : " (X) ";
