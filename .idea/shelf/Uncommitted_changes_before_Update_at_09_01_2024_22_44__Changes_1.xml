@@ -1,0 +1,14 @@
+<changelist name="Uncommitted_changes_before_Update_at_09_01_2024_22_44_[Changes]1" date="1704836656206" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_01_2024_22_44_[Changes]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 09/01/2024 22:44 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/JeuDeGo/ihm/JeuDeGo.class" />
+    <option name="AFTER_PATH" value="out/production/JeuDeGo/ihm/JeuDeGo.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_01_2024_22_44_[Changes]1/JeuDeGo.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/JeuDeGo/player/AI.class" />
+    <option name="AFTER_PATH" value="out/production/JeuDeGo/player/AI.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_01_2024_22_44_[Changes]1/AI.class" />
+  </binary>
+</changelist>
