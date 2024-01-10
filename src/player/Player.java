@@ -2,7 +2,6 @@ package player;
 
 import go.IPlayer;
 import go.Stones;
-import go.Goban;
 
 public abstract class Player implements IPlayer {
     private final Stones stoneColor;

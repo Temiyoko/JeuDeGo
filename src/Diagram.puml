@@ -1,0 +1,33 @@
+@startuml
+
+package go {
+  class Goban
+  interface IPlayer
+  class Stones
+}
+
+package go.ihm {
+  class Main
+}
+
+package player {
+  abstract class Player {
+  }
+  class AI {
+  }
+  class Human {
+  }
+}
+
+IPlayer <|.. Player
+Player <|-- AI
+Player <|-- Human
+Player "1" o-- "1" Stones
+
+Goban "0" o-- "*" Stones
+Main "1" o-- "*" IPlayer
+Main "1" o-- "1" Goban
+
+
+
+@enduml
