@@ -1,0 +1,690 @@
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_15_10_[Changes]/shelved.patch
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_15_10_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_15_10_[Changes]/shelved.patch
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_15_10_[Changes]/shelved.patch	(revision 5b7be0d36bae2e258496f34a2ca7e37d3400b2cd)
++++ /dev/null	(revision 5b7be0d36bae2e258496f34a2ca7e37d3400b2cd)
+@@ -1,65 +0,0 @@
+-Index: .idea/workspace.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"3d91ec27-cc2e-442d-ad90-c0d4a67c50e3\" name=\"Changes\" comment=\"Minor changes\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/out/production/JeuDeGo/go/Goban.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/JeuDeGo/go/Goban.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/out/production/JeuDeGo/ihm/JeuDeGo.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/out/production/JeuDeGo/ihm/JeuDeGo.class\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitToolBoxStore\">\r\n    <option name=\"projectConfigVersion\" value=\"5\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 2\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2YRcAbZcYvHZ3GRjuiwnYpJEv0b\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n    <option name=\"showMembers\" value=\"true\" />\r\n    <option name=\"showVisibilityIcons\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,\r\n    &quot;Application.JeuDeGo.executor&quot;: &quot;Run&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\r\n    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,\r\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;F:/Documents/Cours/BUT2/Periode B/Quali dev/JeuDeGo&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"jdk-17.0.9-corretto-17.0.9-f644763e9732-ebaef533\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"3d91ec27-cc2e-442d-ad90-c0d4a67c50e3\" name=\"Changes\" comment=\"\" />\r\n      <created>1700491693659</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1700491693659</updated>\r\n      <workItem from=\"1700491695388\" duration=\"2789000\" />\r\n      <workItem from=\"1700513269062\" duration=\"308000\" />\r\n      <workItem from=\"1700566258443\" duration=\"2321000\" />\r\n      <workItem from=\"1700571663772\" duration=\"3810000\" />\r\n      <workItem from=\"1700771234740\" duration=\"1970000\" />\r\n      <workItem from=\"1700773241060\" duration=\"3114000\" />\r\n      <workItem from=\"1700776406119\" duration=\"922000\" />\r\n      <workItem from=\"1700815808165\" duration=\"3440000\" />\r\n      <workItem from=\"1700827085642\" duration=\"40000\" />\r\n      <workItem from=\"1700827134845\" duration=\"150000\" />\r\n      <workItem from=\"1700827299716\" duration=\"1201000\" />\r\n      <workItem from=\"1701100548734\" duration=\"10000\" />\r\n      <workItem from=\"1701176302453\" duration=\"2538000\" />\r\n      <workItem from=\"1701180295399\" duration=\"641000\" />\r\n      <workItem from=\"1701436027769\" duration=\"5000\" />\r\n      <workItem from=\"1701782135250\" duration=\"814000\" />\r\n      <workItem from=\"1701783023148\" duration=\"6112000\" />\r\n      <workItem from=\"1701854573996\" duration=\"235000\" />\r\n      <workItem from=\"1703526924400\" duration=\"434000\" />\r\n      <workItem from=\"1703672787164\" duration=\"617000\" />\r\n      <workItem from=\"1703673427321\" duration=\"35000\" />\r\n      <workItem from=\"1703673473959\" duration=\"412000\" />\r\n      <workItem from=\"1703674040475\" duration=\"269000\" />\r\n      <workItem from=\"1703674339417\" duration=\"64000\" />\r\n      <workItem from=\"1703674404384\" duration=\"3663000\" />\r\n      <workItem from=\"1703884326202\" duration=\"80000\" />\r\n      <workItem from=\"1704278072166\" duration=\"6826000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Initial commit\">\r\n      <created>1700491729525</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700491729525</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Initial commit\">\r\n      <created>1700491740280</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700491740280</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Coded boardsize\">\r\n      <created>1700501101664</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700501101664</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Coded boardsize\">\r\n      <created>1700501119814</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700501119814</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Updated structure and coded showboard\">\r\n      <created>1700577007684</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700577007684</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Finish showboard + updated Player\">\r\n      <created>1700777327183</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700777327183</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Finish showboard + updated Player\">\r\n      <created>1700815847777</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700815847777</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Handled numbers before command\">\r\n      <created>1700823904012</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700823904012</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Finished first sprint\">\r\n      <created>1701176689785</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1701176689785</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"Coded clear_board\">\r\n      <created>1701782905290</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1701782905290</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"Small changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703674482101</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703674482101</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"Finished Play method\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703704617785</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703704617785</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"Updated play method + main\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703876973300</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703876973300</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00014\" summary=\"Updated play method\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703877003794</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703877003794</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00015\" summary=\"Updated play method\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703883659541</created>\r\n      <option name=\"number\" value=\"00015\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703883659541</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00016\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704278332968</created>\r\n      <option name=\"number\" value=\"00016\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00016\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704278332968</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00017\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704278596647</created>\r\n      <option name=\"number\" value=\"00017\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00017\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704278596647</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00018\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704279556279</created>\r\n      <option name=\"number\" value=\"00018\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00018\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704279556279</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00019\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704282948073</created>\r\n      <option name=\"number\" value=\"00019\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00019\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704282948073</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00020\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704282970315</created>\r\n      <option name=\"number\" value=\"00020\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00020\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704282970315</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00021\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704284955988</created>\r\n      <option name=\"number\" value=\"00021\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00021\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704284955988</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"22\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n    <MESSAGE value=\"Initial commit\" />\r\n    <MESSAGE value=\"Coded boardsize\" />\r\n    <MESSAGE value=\"Updated structure and coded showboard\" />\r\n    <MESSAGE value=\"Finish showboard + updated Player\" />\r\n    <MESSAGE value=\"Handled numbers before command\" />\r\n    <MESSAGE value=\"Finished first sprint\" />\r\n    <MESSAGE value=\"Coded clear_board\" />\r\n    <MESSAGE value=\"Small changes\" />\r\n    <MESSAGE value=\"Finished Play method\" />\r\n    <MESSAGE value=\"Updated play method + main\" />\r\n    <MESSAGE value=\"Updated play method\" />\r\n    <MESSAGE value=\"Minor changes\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Minor changes\" />\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+---- a/.idea/workspace.xml	(revision 973049fdb5296aef97dd63e73de7bf1d4a08cb0a)
+-+++ b/.idea/workspace.xml	(date 1704290954862)
+-@@ -4,11 +4,7 @@
+-     <option name="autoReloadType" value="SELECTIVE" />
+-   </component>
+-   <component name="ChangeListManager">
+--    <list default="true" id="3d91ec27-cc2e-442d-ad90-c0d4a67c50e3" name="Changes" comment="Minor changes">
+--      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/go/Goban.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JeuDeGo/go/Goban.class" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/ihm/JeuDeGo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JeuDeGo/ihm/JeuDeGo.class" afterDir="false" />
+--    </list>
+-+    <list default="true" id="3d91ec27-cc2e-442d-ad90-c0d4a67c50e3" name="Changes" comment="Minor changes" />
+-     <option name="SHOW_DIALOG" value="false" />
+-     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+-     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+-@@ -108,7 +104,7 @@
+-       <workItem from="1703674339417" duration="64000" />
+-       <workItem from="1703674404384" duration="3663000" />
+-       <workItem from="1703884326202" duration="80000" />
+--      <workItem from="1704278072166" duration="6826000" />
+-+      <workItem from="1704278072166" duration="7464000" />
+-     </task>
+-     <task id="LOCAL-00001" summary="Initial commit">
+-       <created>1700491729525</created>
+-@@ -268,7 +264,31 @@
+-       <option name="project" value="LOCAL" />
+-       <updated>1704284955988</updated>
+-     </task>
+--    <option name="localTasksCounter" value="22" />
+-+    <task id="LOCAL-00022" summary="Minor changes">
+-+      <option name="closed" value="true" />
+-+      <created>1704290061031</created>
+-+      <option name="number" value="00022" />
+-+      <option name="presentableId" value="LOCAL-00022" />
+-+      <option name="project" value="LOCAL" />
+-+      <updated>1704290061031</updated>
+-+    </task>
+-+    <task id="LOCAL-00023" summary="Minor changes">
+-+      <option name="closed" value="true" />
+-+      <created>1704290304364</created>
+-+      <option name="number" value="00023" />
+-+      <option name="presentableId" value="LOCAL-00023" />
+-+      <option name="project" value="LOCAL" />
+-+      <updated>1704290304364</updated>
+-+    </task>
+-+    <task id="LOCAL-00024" summary="Minor changes">
+-+      <option name="closed" value="true" />
+-+      <created>1704290761352</created>
+-+      <option name="number" value="00024" />
+-+      <option name="presentableId" value="LOCAL-00024" />
+-+      <option name="project" value="LOCAL" />
+-+      <updated>1704290761352</updated>
+-+    </task>
+-+    <option name="localTasksCounter" value="25" />
+-     <servers />
+-   </component>
+-   <component name="TypeScriptGeneratedFilesManager">
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_18_05_[Changes]/shelved.patch
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_18_05_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_18_05_[Changes]/shelved.patch
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_18_05_[Changes]/shelved.patch	(revision 5b7be0d36bae2e258496f34a2ca7e37d3400b2cd)
++++ /dev/null	(revision 5b7be0d36bae2e258496f34a2ca7e37d3400b2cd)
+@@ -1,228 +0,0 @@
+-Index: src/go/Player.java
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/src/go/Player.java b/src/player/Player.java
+-rename from src/go/Player.java
+-rename to src/player/Player.java
+---- a/src/go/Player.java	(revision 026b2263c0db63518d408ca30155de462038c416)
+-+++ b/src/player/Player.java	(date 1704300012765)
+-@@ -1,9 +1,12 @@
+--package go;
+-+package player;
+-+
+-+import go.Stones;
+-+import ihm.IPlayer;
+- 
+- import java.util.List;
+- import java.util.ArrayList;
+- 
+--public class Player {
+-+public class Player implements IPlayer {
+-     private Stones stoneColor;
+-     private int score;
+-     private List<String> moveHistory;
+-Index: src/ihm/JeuDeGo.java
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+>package ihm;\r\n\r\nimport go.Stones;\r\nimport go.Goban;\r\nimport go.Player;\r\n\r\nimport java.util.*;\r\n\r\n\r\npublic class JeuDeGo {\r\n    private static Goban goban;\r\n    private static Player blackP, whiteP;\r\n    public static void main(String[] args) {\r\n        initializeGame();\r\n        Player lastPlayer = whiteP;\r\n\r\n        Scanner sc = new Scanner(System.in);\r\n\r\n        while(sc.hasNextLine()) {\r\n            String input = sc.nextLine().trim();\r\n            String[] arguments = input.split(\"\\\\s+\");\r\n\r\n            String id, cmd;\r\n            String[] arg;\r\n\r\n            if(isInt(arguments[0])){\r\n                id = arguments[0];\r\n                cmd = arguments[1];\r\n                arg = Arrays.copyOfRange(arguments, 2, arguments.length);\r\n            }\r\n            else{\r\n                id = \"\";\r\n                cmd = arguments[0];\r\n                arg = Arrays.copyOfRange(arguments, 1, arguments.length);\r\n            }\r\n            switch (cmd) {\r\n                case \"quit\":\r\n                    System.out.println(\"=\" + id);\r\n                    return;\r\n                case \"boardsize\":\r\n                    boardsize(arg, id);\r\n                    break;\r\n                case \"showboard\":\r\n                    showboard(id);\r\n                    break;\r\n                case \"clear_board\":\r\n                    resetGame(goban.getSize());\r\n                    System.out.println(\"=\" + id);\r\n                    break;\r\n                case \"play\":\r\n                    lastPlayer = play(arg, id, lastPlayer);\r\n                    if (lastPlayer == null) {\r\n                        return;\r\n                    }\r\n                    break;\r\n                default:\r\n                    System.out.println(\"?\" + id + \" unknown command\");\r\n                    break;\r\n            }\r\n        }\r\n        sc.close();\r\n    }\r\n\r\n    private static void initializeGame() {\r\n        goban = new Goban();\r\n        blackP = new Player(Stones.BLACK);\r\n        whiteP = new Player(Stones.WHITE);\r\n    }\r\n\r\n    private static void showboard(String id) {\r\n        System.out.println(\"=\" + id);\r\n        System.out.println(goban.show(blackP, whiteP));\r\n    }\r\n\r\n    private static int[] convert(String s){ //A1\r\n        char c = s.toUpperCase().charAt(0);\r\n        if (c == 'I') {\r\n            throw new IllegalArgumentException();\r\n        }\r\n        int col = c > 'I' ? (int) c - 'A' - 1 : (int) c - 'A';\r\n        int ligne = Integer.parseInt(s.substring(1)) - 1;\r\n        return new int[]{col,  ligne};\r\n    }\r\n\r\n    private static Player play(String[] arg, String id, Player lastPlayer) {\r\n        try {\r\n            if (!arg[0].equalsIgnoreCase(\"white\") && !arg[0].equalsIgnoreCase(\"black\")) {\r\n                throw new IllegalArgumentException();\r\n            }\r\n            Player p = arg[0].equalsIgnoreCase(\"black\") ? blackP : whiteP;\r\n\r\n            if(p == lastPlayer){\r\n                throw new RuntimeException();\r\n            }\r\n\r\n            if (arg[1].equalsIgnoreCase(\"pass\")) {\r\n\r\n                if (p.getLastMove().equalsIgnoreCase(\"pass\")){\r\n                    System.out.println(\"=\" + id + \" resigns\");\r\n                    return null;\r\n                }\r\n\r\n                p.addMove(arg[1]);\r\n                System.out.println(\"=\" + id);\r\n                return p;\r\n            }\r\n\r\n            int[] coord = convert(arg[1]);\r\n            if (!goban.isInBoard(coord)) {\r\n                throw new IllegalArgumentException();\r\n            }\r\n            else if (!goban.isPlayable(coord) || isSuicide(coord)) {\r\n                throw new RuntimeException();\r\n            }\r\n\r\n            Stones color = (p == blackP) ? Stones.BLACK : Stones.WHITE;\r\n\r\n            p.addMove(arg[1]);\r\n            goban.setStone(coord, color);\r\n\r\n            p.setScore(p.getScore() + goban.captureStones(coord));\r\n\r\n            System.out.println(\"=\" + id);\r\n            return p;\r\n\r\n        } catch (IllegalArgumentException | ArrayIndexOutOfBoundsException e) {\r\n            System.out.println(\"?\" + id + \" invalid color or coordinate\");\r\n        } catch (RuntimeException e) {\r\n            System.out.println(\"?\" + id + \" illegal move\");\r\n        }\r\n        return lastPlayer;\r\n    }\r\n\r\n    private static boolean isSuicide(int[] position) {\r\n        return goban.getLiberties(position) == 0;\r\n    }\r\n\r\n    private static void boardsize(String[] args, String id) {\r\n        try {\r\n            int nb = Integer.parseInt(args[0]);\r\n\r\n            if(nb < goban.getMinSize() || nb > goban.getMaxSize()){\r\n                System.out.println(\"?\" + id + \" unacceptable size\");\r\n                return;\r\n            }\r\n\r\n            resetGame(nb);\r\n            System.out.println(\"=\" + id);\r\n        }\r\n        catch (ArrayIndexOutOfBoundsException e){\r\n            System.out.println(\"?\" + id + \" boardsize not an integer\");\r\n        }\r\n        catch (NumberFormatException e) {\r\n            System.out.println(\"?\" + id + \" unknown command\");\r\n        }\r\n    }\r\n\r\n    private static void resetGame(int nb) {\r\n        assert nb >= goban.getMinSize() && nb <= goban.getMaxSize();\r\n\r\n        goban = new Goban(nb);\r\n        blackP.reset();\r\n        whiteP.reset();\r\n    }\r\n\r\n    private static boolean isInt(String s){\r\n        try{\r\n            Integer.parseInt(s);\r\n            return true;\r\n        } catch (NumberFormatException e) {\r\n            return false;\r\n        }\r\n    }\r\n}
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/src/ihm/JeuDeGo.java b/src/ihm/JeuDeGo.java
+---- a/src/ihm/JeuDeGo.java	(revision 026b2263c0db63518d408ca30155de462038c416)
+-+++ b/src/ihm/JeuDeGo.java	(date 1704300012771)
+-@@ -2,17 +2,16 @@
+- 
+- import go.Stones;
+- import go.Goban;
+--import go.Player;
+- 
+- import java.util.*;
+- 
+- 
+- public class JeuDeGo {
+-     private static Goban goban;
+--    private static Player blackP, whiteP;
+-+    private static IPlayer blackP, whiteP;
+-     public static void main(String[] args) {
+-         initializeGame();
+--        Player lastPlayer = whiteP;
+-+        IPlayer lastPlayer = whiteP;
+- 
+-         Scanner sc = new Scanner(System.in);
+- 
+-@@ -82,12 +81,12 @@
+-         return new int[]{col,  ligne};
+-     }
+- 
+--    private static Player play(String[] arg, String id, Player lastPlayer) {
+-+    private static IPlayer play(String[] arg, String id, IPlayer lastPlayer) {
+-         try {
+-             if (!arg[0].equalsIgnoreCase("white") && !arg[0].equalsIgnoreCase("black")) {
+-                 throw new IllegalArgumentException();
+-             }
+--            Player p = arg[0].equalsIgnoreCase("black") ? blackP : whiteP;
+-+            IPlayer p = arg[0].equalsIgnoreCase("black") ? blackP : whiteP;
+- 
+-             if(p == lastPlayer){
+-                 throw new RuntimeException();
+-Index: src/go/Goban.java
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+>package go;\r\n\r\nimport java.util.ArrayList;\r\nimport java.util.List;\r\n\r\npublic class Goban {\r\n    private static final int MINSIZE = 1, MAXSIZE = 19;\r\n    private int size;\r\n    private Stones[][] stones;\r\n\r\n    public Goban(){\r\n        this.size = MAXSIZE;\r\n        this.stones = new Stones[MAXSIZE][MAXSIZE];\r\n    }\r\n\r\n    public Goban(int n){\r\n        assert n >= MINSIZE && n <= MAXSIZE;\r\n        this.size = n;\r\n        this.stones = new Stones[n][n];\r\n    }\r\n\r\n    public int getSize(){\r\n        return size;\r\n    }\r\n\r\n    public int getMinSize(){\r\n        return MINSIZE;\r\n    }\r\n\r\n    public int getMaxSize(){\r\n        return MAXSIZE;\r\n    }\r\n\r\n    public void setStone(int[] tab, Stones s) {\r\n        stones[tab[1]][tab[0]] = s;\r\n    }\r\n\r\n    public boolean isInBoard(int[] tab){\r\n        return tab[0] >= 0 && tab[0] < size && tab[1] >= 0 && tab[1] < size;\r\n    }\r\n\r\n    public boolean isPlayable(int[] tab){\r\n        return stones[tab[1]][tab[0]] == null;\r\n    }\r\n\r\n    public int getLiberties(int[] position) {\r\n        int liberties = 0;\r\n\r\n        for (int[] adjPos : getAdjacentPositions(position)) {\r\n            if (isPlayable(adjPos)) {\r\n                ++liberties;\r\n            }\r\n        }\r\n        return liberties;\r\n    }\r\n\r\n    public List<int[]> getAdjacentPositions(int[] position) { //[A,9] (0,8) A - 1 (-1)\r\n        List<int[]> adjacentPositions = new ArrayList<>();\r\n\r\n        int[][] directions = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};\r\n        for (int[] dir : directions) {\r\n            int newX = position[0] + dir[0];//a verifier\r\n            int newY = position[1] + dir[1];\r\n            if (isInBoard(new int[]{newX, newY})) {// a verifier\r\n                adjacentPositions.add(new int[]{newX, newY});\r\n            }\r\n        }\r\n        return adjacentPositions;\r\n    }\r\n\r\n    public int captureStones(int[] position) {\r\n        int cpt = 0;\r\n        for (int[] adjPos : getAdjacentPositions(position)) {\r\n            if (isPlayable(position)) {\r\n                int stoneLiberties = getLiberties(adjPos);\r\n                if (stoneLiberties == 0) {\r\n                    setStone(adjPos, null);\r\n                    cpt++;\r\n                }\r\n            }\r\n        }\r\n        return cpt;\r\n    }\r\n\r\n    public String show(Player p1, Player p2) {\r\n        StringBuilder sb = new StringBuilder(\"   \");\r\n        int cpt = size;\r\n\r\n        letters(sb);\r\n        sb.append(System.lineSeparator());\r\n\r\n        for (int i = size - 1 ; i >= 0 ; --i){\r\n            sb.append(cpt < 10 ? \" \" + cpt : cpt).append(\" \");\r\n\r\n            for (int j = 0 ; j < size ; ++j){\r\n                Stones st = stones[i][j];\r\n                sb.append(st == null ? \". \" : st == Stones.BLACK ? \"X \" : \"O \");\r\n            }\r\n\r\n            sb.append(cpt < 10 ? \" \" + cpt : cpt);\r\n            sb.append(cpt == 2 ? \"     \" + p2.toString() : cpt == 1 ? \"     \" + p1.toString() : \"\");\r\n\r\n            sb.append(System.lineSeparator());\r\n            --cpt;\r\n        }\r\n\r\n        sb.append(\"   \");\r\n        letters(sb);\r\n\r\n        return sb.toString();\r\n    }\r\n\r\n    private void letters(StringBuilder sb) {\r\n        for (int i = 0; i < size; ++i) {\r\n            char c = (char)('A' + i);\r\n            sb.append(c >= 'I' ? (char)(c + 1) : c).append(\" \");\r\n        }\r\n    }\r\n}\r\n
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/src/go/Goban.java b/src/go/Goban.java
+---- a/src/go/Goban.java	(revision 026b2263c0db63518d408ca30155de462038c416)
+-+++ b/src/go/Goban.java	(date 1704299870642)
+-@@ -1,5 +1,7 @@
+- package go;
+- 
+-+import player.Player;
+-+
+- import java.util.ArrayList;
+- import java.util.List;
+- 
+-Index: src/ihm/IPlayer.java
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/src/ihm/IPlayer.java b/src/ihm/IPlayer.java
+-new file mode 100644
+---- /dev/null	(date 1704301396872)
+-+++ b/src/ihm/IPlayer.java	(date 1704301396872)
+-@@ -0,0 +1,14 @@
+-+package ihm;
+-+
+-+public interface IPlayer {
+-+    IPlayer play();
+-+    public void addMove(String move);
+-+
+-+    public int getScore();
+-+
+-+    public void setScore(int score);
+-+
+-+    public void reset();
+-+
+-+    public String getLastMove();
+-+}
+-Index: .idea/workspace.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"3d91ec27-cc2e-442d-ad90-c0d4a67c50e3\" name=\"Changes\" comment=\"Minor changes\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitToolBoxStore\">\r\n    <option name=\"projectConfigVersion\" value=\"5\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 2\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2YRcAbZcYvHZ3GRjuiwnYpJEv0b\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n    <option name=\"showMembers\" value=\"true\" />\r\n    <option name=\"showVisibilityIcons\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,\r\n    &quot;Application.JeuDeGo.executor&quot;: &quot;Run&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\r\n    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,\r\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;F:/Documents/Cours/BUT2/Periode B/Quali dev/JeuDeGo&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"jdk-17.0.9-corretto-17.0.9-f644763e9732-ebaef533\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"3d91ec27-cc2e-442d-ad90-c0d4a67c50e3\" name=\"Changes\" comment=\"\" />\r\n      <created>1700491693659</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1700491693659</updated>\r\n      <workItem from=\"1700491695388\" duration=\"2789000\" />\r\n      <workItem from=\"1700513269062\" duration=\"308000\" />\r\n      <workItem from=\"1700566258443\" duration=\"2321000\" />\r\n      <workItem from=\"1700571663772\" duration=\"3810000\" />\r\n      <workItem from=\"1700771234740\" duration=\"1970000\" />\r\n      <workItem from=\"1700773241060\" duration=\"3114000\" />\r\n      <workItem from=\"1700776406119\" duration=\"922000\" />\r\n      <workItem from=\"1700815808165\" duration=\"3440000\" />\r\n      <workItem from=\"1700827085642\" duration=\"40000\" />\r\n      <workItem from=\"1700827134845\" duration=\"150000\" />\r\n      <workItem from=\"1700827299716\" duration=\"1201000\" />\r\n      <workItem from=\"1701100548734\" duration=\"10000\" />\r\n      <workItem from=\"1701176302453\" duration=\"2538000\" />\r\n      <workItem from=\"1701180295399\" duration=\"641000\" />\r\n      <workItem from=\"1701436027769\" duration=\"5000\" />\r\n      <workItem from=\"1701782135250\" duration=\"814000\" />\r\n      <workItem from=\"1701783023148\" duration=\"6112000\" />\r\n      <workItem from=\"1701854573996\" duration=\"235000\" />\r\n      <workItem from=\"1703526924400\" duration=\"434000\" />\r\n      <workItem from=\"1703672787164\" duration=\"617000\" />\r\n      <workItem from=\"1703673427321\" duration=\"35000\" />\r\n      <workItem from=\"1703673473959\" duration=\"412000\" />\r\n      <workItem from=\"1703674040475\" duration=\"269000\" />\r\n      <workItem from=\"1703674339417\" duration=\"64000\" />\r\n      <workItem from=\"1703674404384\" duration=\"3663000\" />\r\n      <workItem from=\"1703884326202\" duration=\"80000\" />\r\n      <workItem from=\"1704278072166\" duration=\"7464000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Initial commit\">\r\n      <created>1700491729525</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700491729525</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Initial commit\">\r\n      <created>1700491740280</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700491740280</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Coded boardsize\">\r\n      <created>1700501101664</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700501101664</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Coded boardsize\">\r\n      <created>1700501119814</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700501119814</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Updated structure and coded showboard\">\r\n      <created>1700577007684</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700577007684</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Finish showboard + updated Player\">\r\n      <created>1700777327183</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700777327183</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Finish showboard + updated Player\">\r\n      <created>1700815847777</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700815847777</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Handled numbers before command\">\r\n      <created>1700823904012</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700823904012</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Finished first sprint\">\r\n      <created>1701176689785</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1701176689785</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"Coded clear_board\">\r\n      <created>1701782905290</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1701782905290</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"Small changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703674482101</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703674482101</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"Finished Play method\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703704617785</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703704617785</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"Updated play method + main\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703876973300</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703876973300</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00014\" summary=\"Updated play method\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703877003794</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703877003794</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00015\" summary=\"Updated play method\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703883659541</created>\r\n      <option name=\"number\" value=\"00015\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703883659541</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00016\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704278332968</created>\r\n      <option name=\"number\" value=\"00016\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00016\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704278332968</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00017\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704278596647</created>\r\n      <option name=\"number\" value=\"00017\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00017\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704278596647</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00018\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704279556279</created>\r\n      <option name=\"number\" value=\"00018\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00018\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704279556279</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00019\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704282948073</created>\r\n      <option name=\"number\" value=\"00019\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00019\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704282948073</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00020\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704282970315</created>\r\n      <option name=\"number\" value=\"00020\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00020\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704282970315</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00021\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704284955988</created>\r\n      <option name=\"number\" value=\"00021\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00021\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704284955988</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00022\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704290061031</created>\r\n      <option name=\"number\" value=\"00022\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00022\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704290061031</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00023\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704290304364</created>\r\n      <option name=\"number\" value=\"00023\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00023\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704290304364</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00024\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704290761352</created>\r\n      <option name=\"number\" value=\"00024\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00024\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704290761352</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"25\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n    <MESSAGE value=\"Initial commit\" />\r\n    <MESSAGE value=\"Coded boardsize\" />\r\n    <MESSAGE value=\"Updated structure and coded showboard\" />\r\n    <MESSAGE value=\"Finish showboard + updated Player\" />\r\n    <MESSAGE value=\"Handled numbers before command\" />\r\n    <MESSAGE value=\"Finished first sprint\" />\r\n    <MESSAGE value=\"Coded clear_board\" />\r\n    <MESSAGE value=\"Small changes\" />\r\n    <MESSAGE value=\"Finished Play method\" />\r\n    <MESSAGE value=\"Updated play method + main\" />\r\n    <MESSAGE value=\"Updated play method\" />\r\n    <MESSAGE value=\"Minor changes\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Minor changes\" />\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+---- a/.idea/workspace.xml	(revision 026b2263c0db63518d408ca30155de462038c416)
+-+++ b/.idea/workspace.xml	(date 1704300012832)
+-@@ -4,7 +4,18 @@
+-     <option name="autoReloadType" value="SELECTIVE" />
+-   </component>
+-   <component name="ChangeListManager">
+--    <list default="true" id="3d91ec27-cc2e-442d-ad90-c0d4a67c50e3" name="Changes" comment="Minor changes" />
+-+    <list default="true" id="3d91ec27-cc2e-442d-ad90-c0d4a67c50e3" name="Changes" comment="Minor changes">
+-+      <change afterPath="$PROJECT_DIR$/src/ihm/IPlayer.java" afterDir="false" />
+-+      <change afterPath="$PROJECT_DIR$/src/player/RandomPlayer.java" afterDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_15_10__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_15_10__Changes_.xml" afterDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/go/Goban.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JeuDeGo/go/Goban.class" afterDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/go/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JeuDeGo/go/Player.class" afterDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/ihm/JeuDeGo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JeuDeGo/ihm/JeuDeGo.class" afterDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/src/go/Goban.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/go/Goban.java" afterDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/src/go/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/player/Player.java" afterDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/src/ihm/JeuDeGo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ihm/JeuDeGo.java" afterDir="false" />
+-+    </list>
+-     <option name="SHOW_DIALOG" value="false" />
+-     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+-     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+-@@ -13,6 +24,7 @@
+-   <component name="FileTemplateManagerImpl">
+-     <option name="RECENT_TEMPLATES">
+-       <list>
+-+        <option value="Interface" />
+-         <option value="Class" />
+-       </list>
+-     </option>
+-Index: src/player/RandomPlayer.java
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/src/player/RandomPlayer.java b/src/player/RandomPlayer.java
+-new file mode 100644
+---- /dev/null	(date 1704301551969)
+-+++ b/src/player/RandomPlayer.java	(date 1704301551969)
+-@@ -0,0 +1,68 @@
+-+package player;
+-+
+-+import ihm.IPlayer;
+-+
+-+public class RandomPlayer implements IPlayer {
+-+    @Override
+-+    public IPlayer play() {
+-+        return null;
+-+    }
+-+
+-+    // Méthode pour générer un coup aléatoire valide
+-+    public int[] generateRandomMove() {
+-+        List<int[]> emptyIntersections = new ArrayList<>();
+-+
+-+        // Recherche des intersections vides
+-+        for (int i = 0; i < size; i++) {
+-+            for (int j = 0; j < size; j++) {
+-+                if (board[i][j] == 0) {
+-+                    int[] intersection = {i, j};
+-+                    emptyIntersections.add(intersection);
+-+                }
+-+            }
+-+        }
+-+
+-+        // Sélection aléatoire d'une intersection vide non suicidaire
+-+        Random random = new Random();
+-+        while (!emptyIntersections.isEmpty()) {
+-+            int index = random.nextInt(emptyIntersections.size());
+-+            int[] move = emptyIntersections.get(index);
+-+            int x = move[0];
+-+            int y = move[1];
+-+
+-+            // Vérification si le coup est suicidaire
+-+            if (!isSuicide(x, y, 1) || !isSuicide(x, y, 2)) {
+-+                return move; // Renvoie le coup valide
+-+            } else {
+-+                emptyIntersections.remove(index); // Supprime l'intersection suicidaire de la liste
+-+            }
+-+        }
+-+
+-+        return null; // Aucun coup valide trouvé
+-+    }
+-+
+-+    @Override
+-+    public void addMove(String move) {
+-+
+-+    }
+-+
+-+    @Override
+-+    public int getScore() {
+-+        return 0;
+-+    }
+-+
+-+    @Override
+-+    public void setScore(int score) {
+-+
+-+    }
+-+
+-+    @Override
+-+    public void reset() {
+-+
+-+    }
+-+
+-+    @Override
+-+    public String getLastMove() {
+-+        return null;
+-+    }
+-+}
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_21_23_[Changes]1/shelved.patch
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_21_23_[Changes]1/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_21_23_[Changes]1/shelved.patch
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_21_23_[Changes]1/shelved.patch	(revision 5b7be0d36bae2e258496f34a2ca7e37d3400b2cd)
++++ /dev/null	(revision 5b7be0d36bae2e258496f34a2ca7e37d3400b2cd)
+@@ -1,179 +0,0 @@
+-Index: .idea/workspace.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"3d91ec27-cc2e-442d-ad90-c0d4a67c50e3\" name=\"Changes\" comment=\"Moved play to Player\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitToolBoxStore\">\r\n    <option name=\"projectConfigVersion\" value=\"5\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 2\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2YRcAbZcYvHZ3GRjuiwnYpJEv0b\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n    <option name=\"showMembers\" value=\"true\" />\r\n    <option name=\"showVisibilityIcons\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,\r\n    &quot;Application.JeuDeGo.executor&quot;: &quot;Run&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\r\n    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,\r\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;F:/Documents/Cours/BUT2/Periode B/Quali dev/JeuDeGo&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"jdk-17.0.9-corretto-17.0.9-f644763e9732-ebaef533\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"3d91ec27-cc2e-442d-ad90-c0d4a67c50e3\" name=\"Changes\" comment=\"\" />\r\n      <created>1700491693659</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1700491693659</updated>\r\n      <workItem from=\"1700491695388\" duration=\"2789000\" />\r\n      <workItem from=\"1700513269062\" duration=\"308000\" />\r\n      <workItem from=\"1700566258443\" duration=\"2321000\" />\r\n      <workItem from=\"1700571663772\" duration=\"3810000\" />\r\n      <workItem from=\"1700771234740\" duration=\"1970000\" />\r\n      <workItem from=\"1700773241060\" duration=\"3114000\" />\r\n      <workItem from=\"1700776406119\" duration=\"922000\" />\r\n      <workItem from=\"1700815808165\" duration=\"3440000\" />\r\n      <workItem from=\"1700827085642\" duration=\"40000\" />\r\n      <workItem from=\"1700827134845\" duration=\"150000\" />\r\n      <workItem from=\"1700827299716\" duration=\"1201000\" />\r\n      <workItem from=\"1701100548734\" duration=\"10000\" />\r\n      <workItem from=\"1701176302453\" duration=\"2538000\" />\r\n      <workItem from=\"1701180295399\" duration=\"641000\" />\r\n      <workItem from=\"1701436027769\" duration=\"5000\" />\r\n      <workItem from=\"1701782135250\" duration=\"814000\" />\r\n      <workItem from=\"1701783023148\" duration=\"6112000\" />\r\n      <workItem from=\"1701854573996\" duration=\"235000\" />\r\n      <workItem from=\"1703526924400\" duration=\"434000\" />\r\n      <workItem from=\"1703672787164\" duration=\"617000\" />\r\n      <workItem from=\"1703673427321\" duration=\"35000\" />\r\n      <workItem from=\"1703673473959\" duration=\"412000\" />\r\n      <workItem from=\"1703674040475\" duration=\"269000\" />\r\n      <workItem from=\"1703674339417\" duration=\"64000\" />\r\n      <workItem from=\"1703674404384\" duration=\"3663000\" />\r\n      <workItem from=\"1703884326202\" duration=\"80000\" />\r\n      <workItem from=\"1704278072166\" duration=\"11063000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Initial commit\">\r\n      <created>1700491729525</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700491729525</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Initial commit\">\r\n      <created>1700491740280</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700491740280</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Coded boardsize\">\r\n      <created>1700501101664</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700501101664</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Coded boardsize\">\r\n      <created>1700501119814</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700501119814</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Updated structure and coded showboard\">\r\n      <created>1700577007684</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700577007684</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Finish showboard + updated Player\">\r\n      <created>1700777327183</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700777327183</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Finish showboard + updated Player\">\r\n      <created>1700815847777</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700815847777</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Handled numbers before command\">\r\n      <created>1700823904012</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700823904012</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Finished first sprint\">\r\n      <created>1701176689785</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1701176689785</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"Coded clear_board\">\r\n      <created>1701782905290</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1701782905290</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"Small changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703674482101</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703674482101</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"Finished Play method\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703704617785</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703704617785</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"Updated play method + main\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703876973300</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703876973300</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00014\" summary=\"Updated play method\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703877003794</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703877003794</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00015\" summary=\"Updated play method\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703883659541</created>\r\n      <option name=\"number\" value=\"00015\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703883659541</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00016\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704278332968</created>\r\n      <option name=\"number\" value=\"00016\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00016\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704278332968</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00017\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704278596647</created>\r\n      <option name=\"number\" value=\"00017\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00017\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704278596647</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00018\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704279556279</created>\r\n      <option name=\"number\" value=\"00018\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00018\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704279556279</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00019\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704282948073</created>\r\n      <option name=\"number\" value=\"00019\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00019\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704282948073</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00020\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704282970315</created>\r\n      <option name=\"number\" value=\"00020\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00020\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704282970315</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00021\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704284955988</created>\r\n      <option name=\"number\" value=\"00021\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00021\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704284955988</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00022\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704290061031</created>\r\n      <option name=\"number\" value=\"00022\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00022\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704290061031</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00023\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704290304364</created>\r\n      <option name=\"number\" value=\"00023\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00023\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704290304364</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00024\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704290761352</created>\r\n      <option name=\"number\" value=\"00024\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00024\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704290761352</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00025\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704291116711</created>\r\n      <option name=\"number\" value=\"00025\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00025\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704291116711</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00026\" summary=\"Moved history to Player\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704292251066</created>\r\n      <option name=\"number\" value=\"00026\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00026\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704292251066</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00027\" summary=\"Moved play to Player\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704294558148</created>\r\n      <option name=\"number\" value=\"00027\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00027\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704294558148</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"28\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n    <MESSAGE value=\"Initial commit\" />\r\n    <MESSAGE value=\"Coded boardsize\" />\r\n    <MESSAGE value=\"Updated structure and coded showboard\" />\r\n    <MESSAGE value=\"Finish showboard + updated Player\" />\r\n    <MESSAGE value=\"Handled numbers before command\" />\r\n    <MESSAGE value=\"Finished first sprint\" />\r\n    <MESSAGE value=\"Coded clear_board\" />\r\n    <MESSAGE value=\"Small changes\" />\r\n    <MESSAGE value=\"Finished Play method\" />\r\n    <MESSAGE value=\"Updated play method + main\" />\r\n    <MESSAGE value=\"Updated play method\" />\r\n    <MESSAGE value=\"Minor changes\" />\r\n    <MESSAGE value=\"Moved history to Player\" />\r\n    <MESSAGE value=\"Moved play to Player\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Moved play to Player\" />\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+---- a/.idea/workspace.xml	
+-+++ b/.idea/workspace.xml	
+-@@ -4,7 +4,14 @@
+-     <option name="autoReloadType" value="SELECTIVE" />
+-   </component>
+-   <component name="ChangeListManager">
+--    <list default="true" id="3d91ec27-cc2e-442d-ad90-c0d4a67c50e3" name="Changes" comment="Moved play to Player" />
+-+    <list default="true" id="3d91ec27-cc2e-442d-ad90-c0d4a67c50e3" name="Changes" comment="Moved play to Player">
+-+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/go/Goban.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JeuDeGo/go/Goban.class" afterDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/go/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JeuDeGo/go/Player.class" afterDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/ihm/JeuDeGo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JeuDeGo/ihm/JeuDeGo.class" afterDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/src/go/Goban.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/go/Goban.java" afterDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/src/go/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/go/Player.java" afterDir="false" />
+-+    </list>
+-     <option name="SHOW_DIALOG" value="false" />
+-     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+-     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+-@@ -105,6 +112,7 @@
+-       <workItem from="1703674404384" duration="3663000" />
+-       <workItem from="1703884326202" duration="80000" />
+-       <workItem from="1704278072166" duration="11063000" />
+-+      <workItem from="1704294742040" duration="11640000" />
+-     </task>
+-     <task id="LOCAL-00001" summary="Initial commit">
+-       <created>1700491729525</created>
+-@@ -312,7 +320,15 @@
+-       <option name="project" value="LOCAL" />
+-       <updated>1704294558148</updated>
+-     </task>
+--    <option name="localTasksCounter" value="28" />
+-+    <task id="LOCAL-00028" summary="Moved play to Player">
+-+      <option name="closed" value="true" />
+-+      <created>1704294792204</created>
+-+      <option name="number" value="00028" />
+-+      <option name="presentableId" value="LOCAL-00028" />
+-+      <option name="project" value="LOCAL" />
+-+      <updated>1704294792204</updated>
+-+    </task>
+-+    <option name="localTasksCounter" value="29" />
+-     <servers />
+-   </component>
+-   <component name="TypeScriptGeneratedFilesManager">
+-Index: src/go/Goban.java
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+>package go;\r\n\r\nimport java.util.ArrayList;\r\nimport java.util.List;\r\n\r\npublic class Goban {\r\n    private static final int MINSIZE = 1, MAXSIZE = 19;\r\n    private final int size;\r\n    private Stones[][] stones;\r\n\r\n    public Goban(){\r\n        this.size = MAXSIZE;\r\n        this.stones = new Stones[MAXSIZE][MAXSIZE];\r\n    }\r\n\r\n    public Goban(int n){\r\n        assert n >= MINSIZE && n <= MAXSIZE;\r\n        this.size = n;\r\n        this.stones = new Stones[n][n];\r\n    }\r\n\r\n    public int getSize(){\r\n        return size;\r\n    }\r\n\r\n    public int getMinSize(){\r\n        return MINSIZE;\r\n    }\r\n\r\n    public int getMaxSize(){\r\n        return MAXSIZE;\r\n    }\r\n\r\n    public void setStone(int[] tab, Stones s) {\r\n        stones[tab[1]][tab[0]] = s;\r\n    }\r\n\r\n    public boolean isInBoard(int[] tab){\r\n        return tab[0] >= 0 && tab[0] < size && tab[1] >= 0 && tab[1] < size;\r\n    }\r\n\r\n    public boolean isPlayable(int[] tab){\r\n        return stones[tab[1]][tab[0]] == null;\r\n    }\r\n\r\n    public int getLiberties(int[] position) {\r\n        int liberties = 0;\r\n\r\n        for (int[] adjPos : getAdjacentPositions(position)) {\r\n            if (isPlayable(adjPos)) {\r\n                ++liberties;\r\n            }\r\n        }\r\n        return liberties;\r\n    }\r\n\r\n    public List<int[]> getAdjacentPositions(int[] position) { //[A,9] (0,8) A - 1 (-1)\r\n        List<int[]> adjacentPositions = new ArrayList<>();\r\n\r\n        int[][] directions = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};\r\n        for (int[] dir : directions) {\r\n            int newX = position[0] + dir[0];//a verifier\r\n            int newY = position[1] + dir[1];\r\n            if (isInBoard(new int[]{newX, newY})) {// a verifier\r\n                adjacentPositions.add(new int[]{newX, newY});\r\n            }\r\n        }\r\n        return adjacentPositions;\r\n    }\r\n\r\n    public int captureStones(int[] position) {\r\n        int cpt = 0;\r\n        for (int[] adjPos : getAdjacentPositions(position)) {\r\n            if (isPlayable(position)) {\r\n                int stoneLiberties = getLiberties(adjPos);\r\n                if (stoneLiberties == 0) {\r\n                    setStone(adjPos, null);\r\n                    cpt++;\r\n                }\r\n            }\r\n        }\r\n        return cpt;\r\n    }\r\n\r\n    public String show(Player p1, Player p2) {\r\n        StringBuilder sb = new StringBuilder(\"   \");\r\n        int cpt = size;\r\n\r\n        letters(sb);\r\n        sb.append(System.lineSeparator());\r\n\r\n        for (int i = size - 1 ; i >= 0 ; --i){\r\n            sb.append(cpt < 10 ? \" \" + cpt : cpt).append(\" \");\r\n\r\n            for (int j = 0 ; j < size ; ++j){\r\n                Stones st = stones[i][j];\r\n                sb.append(st == null ? \". \" : st == Stones.BLACK ? \"X \" : \"O \");\r\n            }\r\n\r\n            sb.append(cpt < 10 ? \" \" + cpt : cpt);\r\n            sb.append(cpt == 2 ? \"     \" + p2.toString() : cpt == 1 ? \"     \" + p1.toString() : \"\");\r\n\r\n            sb.append(System.lineSeparator());\r\n            --cpt;\r\n        }\r\n\r\n        sb.append(\"   \");\r\n        letters(sb);\r\n\r\n        return sb.toString();\r\n    }\r\n\r\n    private void letters(StringBuilder sb) {\r\n        for (int i = 0; i < size; ++i) {\r\n            char c = (char)('A' + i);\r\n            sb.append(c >= 'I' ? (char)(c + 1) : c).append(\" \");\r\n        }\r\n    }\r\n}\r\n
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/src/go/Goban.java b/src/go/Goban.java
+---- a/src/go/Goban.java	
+-+++ b/src/go/Goban.java	
+-@@ -4,6 +4,7 @@
+- import java.util.List;
+- 
+- public class Goban {
+-+    private static final int[][] DIRECTIONS = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
+-     private static final int MINSIZE = 1, MAXSIZE = 19;
+-     private final int size;
+-     private Stones[][] stones;
+-@@ -31,8 +32,13 @@
+-         return MAXSIZE;
+-     }
+- 
+--    public void setStone(int[] tab, Stones s) {
+--        stones[tab[1]][tab[0]] = s;
+-+    private Stones getStone(int[] position) {
+-+        return stones[position[1]][position[0]];
+-+    }
+-+
+-+    public void setStone(int[] position, Stones s) {
+-+        assert isInBoard(position);
+-+        stones[position[1]][position[0]] = s;
+-     }
+- 
+-     public boolean isInBoard(int[] tab){
+-@@ -43,45 +49,65 @@
+-         return stones[tab[1]][tab[0]] == null;
+-     }
+- 
+--    public int getLiberties(int[] position) {
+-+    public int getLiberties(int[] position, Stones color) {
+-+        if (!isInBoard(position)) {
+-+            return 0;
+-+        }
+-+
+-+        setStone(position, color);
+-+        int liberties = countLiberties(position, color, new boolean[size][size]);
+-+        setStone(position, null);
+-+
+-+        return liberties;
+-+    }
+-+
+-+    private int countLiberties(int[] position, Stones color, boolean[][] visited) {
+-+        if (!isInBoard(position)|| visited[position[1]][position[0]]) {
+-+            return 0;
+-+        }
+-+
+-+        if (getStone(position) == null) {
+-+            return 1;
+-+        }
+-+
+-+        if (getStone(position) != color) {
+-+            return 0;
+-+        }
+-+
+-+        visited[position[1]][position[0]] = true;
+-         int liberties = 0;
+- 
+--        for (int[] adjPos : getAdjacentPositions(position)) {
+--            if (isPlayable(adjPos)) {
+--                ++liberties;
+--            }
+-+        for (int[] dir : DIRECTIONS) {
+-+            liberties += countLiberties(new int[]{position[0] + dir[0], position[1] + dir[1]}, color, visited);
+-         }
+-+
+-         return liberties;
+-     }
+- 
+--    public List<int[]> getAdjacentPositions(int[] position) { //[A,9] (0,8) A - 1 (-1)
+--        List<int[]> adjacentPositions = new ArrayList<>();
+--
+--        int[][] directions = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
+--        for (int[] dir : directions) {
+--            int newX = position[0] + dir[0];//a verifier
+--            int newY = position[1] + dir[1];
+--            if (isInBoard(new int[]{newX, newY})) {// a verifier
+--                adjacentPositions.add(new int[]{newX, newY});
+--            }
+--        }
+--        return adjacentPositions;
+--    }
+--
+--    public int captureStones(int[] position) {
+-+    public int captureStones(int[] position){
+-         int cpt = 0;
+--        for (int[] adjPos : getAdjacentPositions(position)) {
+--            if (isPlayable(position)) {
+--                int stoneLiberties = getLiberties(adjPos);
+--                if (stoneLiberties == 0) {
+--                    setStone(adjPos, null);
+--                    cpt++;
+--                }
+--            }
+-+        Stones advColor = getStone(position) == Stones.BLACK ? Stones.WHITE : Stones.BLACK;
+-+        for(int[] pos : stonesToCatch(position, advColor)){
+-+            setStone(pos, null);
+-+            cpt++;
+-         }
+-         return cpt;
+-     }
+- 
+-+    private List<int[]> stonesToCatch(int[] position, Stones color) {
+-+        List<int[]> zeroLiberties = new ArrayList<>();
+-+
+-+        for (int[] dir : DIRECTIONS) {
+-+            int[] adjacentPosition = new int[]{position[0] + dir[0], position[1] + dir[1]};
+-+            System.out.println(getStone(adjacentPosition) + " " + getLiberties(adjacentPosition, color));
+-+            if (isInBoard(adjacentPosition) && getStone(adjacentPosition) != color && getLiberties(adjacentPosition, color) == 0) {
+-+                zeroLiberties.add(adjacentPosition);
+-+            }
+-+        }
+-+        return zeroLiberties;
+-+    }
+-+
+-+
+-     public String show(Player p1, Player p2) {
+-         StringBuilder sb = new StringBuilder("   ");
+-         int cpt = size;
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_21_23__Changes_1.xml
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_21_23__Changes_1.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_21_23__Changes_1.xml
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_21_23__Changes_1.xml	(revision 5b7be0d36bae2e258496f34a2ca7e37d3400b2cd)
++++ /dev/null	(revision 5b7be0d36bae2e258496f34a2ca7e37d3400b2cd)
+@@ -1,19 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_03_01_2024_21_23_[Changes]1" date="1704313507734" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_21_23_[Changes]1/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 03/01/2024 21:23 [Changes]" />
+-  <binary>
+-    <option name="BEFORE_PATH" value="out/production/JeuDeGo/ihm/JeuDeGo.class" />
+-    <option name="AFTER_PATH" value="out/production/JeuDeGo/ihm/JeuDeGo.class" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_21_23_[Changes]1/JeuDeGo.class" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value="out/production/JeuDeGo/go/Player.class" />
+-    <option name="AFTER_PATH" value="out/production/JeuDeGo/go/Player.class" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_21_23_[Changes]1/Player.class" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value="out/production/JeuDeGo/go/Goban.class" />
+-    <option name="AFTER_PATH" value="out/production/JeuDeGo/go/Goban.class" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_21_23_[Changes]1/Goban.class" />
+-  </binary>
+-</changelist>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_15_10__Changes_.xml
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_15_10__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_15_10__Changes_.xml
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_15_10__Changes_.xml	(revision 5b7be0d36bae2e258496f34a2ca7e37d3400b2cd)
++++ /dev/null	(revision 5b7be0d36bae2e258496f34a2ca7e37d3400b2cd)
+@@ -1,4 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_03_01_2024_15_10_[Changes]" date="1704291027417" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_15_10_[Changes]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 03/01/2024 15:10 [Changes]" />
+-</changelist>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_15_31_[Changes]/shelved.patch
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_15_31_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_15_31_[Changes]/shelved.patch
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_15_31_[Changes]/shelved.patch	(revision 5b7be0d36bae2e258496f34a2ca7e37d3400b2cd)
++++ /dev/null	(revision 5b7be0d36bae2e258496f34a2ca7e37d3400b2cd)
+@@ -1,39 +0,0 @@
+-Index: .idea/workspace.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"3d91ec27-cc2e-442d-ad90-c0d4a67c50e3\" name=\"Changes\" comment=\"Added new methods to the method play\">\r\n      <change beforePath=\"$PROJECT_DIR$/src/ihm/JeuDeGo.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/ihm/JeuDeGo.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitToolBoxStore\">\r\n    <option name=\"projectConfigVersion\" value=\"5\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 2\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2YRcAbZcYvHZ3GRjuiwnYpJEv0b\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n    <option name=\"showMembers\" value=\"true\" />\r\n    <option name=\"showVisibilityIcons\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,\r\n    &quot;Application.JeuDeGo.executor&quot;: &quot;Run&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\r\n    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,\r\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;F:/Documents/Cours/BUT2/Periode B/Quali dev/JeuDeGo&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"jdk-17.0.9-corretto-17.0.9-f644763e9732-ebaef533\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"3d91ec27-cc2e-442d-ad90-c0d4a67c50e3\" name=\"Changes\" comment=\"\" />\r\n      <created>1700491693659</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1700491693659</updated>\r\n      <workItem from=\"1700491695388\" duration=\"2789000\" />\r\n      <workItem from=\"1700513269062\" duration=\"308000\" />\r\n      <workItem from=\"1700566258443\" duration=\"2321000\" />\r\n      <workItem from=\"1700571663772\" duration=\"3810000\" />\r\n      <workItem from=\"1700771234740\" duration=\"1970000\" />\r\n      <workItem from=\"1700773241060\" duration=\"3114000\" />\r\n      <workItem from=\"1700776406119\" duration=\"922000\" />\r\n      <workItem from=\"1700815808165\" duration=\"3440000\" />\r\n      <workItem from=\"1700827085642\" duration=\"40000\" />\r\n      <workItem from=\"1700827134845\" duration=\"150000\" />\r\n      <workItem from=\"1700827299716\" duration=\"1201000\" />\r\n      <workItem from=\"1701100548734\" duration=\"10000\" />\r\n      <workItem from=\"1701176302453\" duration=\"2538000\" />\r\n      <workItem from=\"1701180295399\" duration=\"641000\" />\r\n      <workItem from=\"1701436027769\" duration=\"5000\" />\r\n      <workItem from=\"1701782135250\" duration=\"814000\" />\r\n      <workItem from=\"1701783023148\" duration=\"6112000\" />\r\n      <workItem from=\"1701854573996\" duration=\"235000\" />\r\n      <workItem from=\"1703526924400\" duration=\"434000\" />\r\n      <workItem from=\"1703672787164\" duration=\"617000\" />\r\n      <workItem from=\"1703673427321\" duration=\"35000\" />\r\n      <workItem from=\"1703673473959\" duration=\"412000\" />\r\n      <workItem from=\"1703674040475\" duration=\"269000\" />\r\n      <workItem from=\"1703674339417\" duration=\"64000\" />\r\n      <workItem from=\"1703674404384\" duration=\"3663000\" />\r\n      <workItem from=\"1703872004246\" duration=\"2501000\" />\r\n      <workItem from=\"1703875030897\" duration=\"6313000\" />\r\n      <workItem from=\"1704278263659\" duration=\"7327000\" />\r\n      <workItem from=\"1704289656754\" duration=\"1096000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Initial commit\">\r\n      <created>1700491729525</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700491729525</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Initial commit\">\r\n      <created>1700491740280</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700491740280</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Coded boardsize\">\r\n      <created>1700501101664</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700501101664</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Coded boardsize\">\r\n      <created>1700501119814</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700501119814</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Updated structure and coded showboard\">\r\n      <created>1700577007684</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700577007684</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Finish showboard + updated Player\">\r\n      <created>1700777327183</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700777327183</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Finish showboard + updated Player\">\r\n      <created>1700815847777</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700815847777</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Handled numbers before command\">\r\n      <created>1700823904012</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700823904012</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Finished first sprint\">\r\n      <created>1701176689785</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1701176689785</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"Coded clear_board\">\r\n      <created>1701782905290</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1701782905290</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"Small changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703674482101</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703674482101</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"Finished Play method\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703704617785</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703704617785</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"Finished Play method\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703708718389</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703708718389</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00014\" summary=\"Added new methods to the method play\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703872312927</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703872312927</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00015\" summary=\"Added new methods to the method play\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703872508530</created>\r\n      <option name=\"number\" value=\"00015\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703872508530</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00016\" summary=\"Added new methods to the method play\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704290982088</created>\r\n      <option name=\"number\" value=\"00016\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00016\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704290982088</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00017\" summary=\"Added new methods to the method play\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704291080904</created>\r\n      <option name=\"number\" value=\"00017\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00017\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704291080904</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"18\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n    <MESSAGE value=\"Initial commit\" />\r\n    <MESSAGE value=\"Coded boardsize\" />\r\n    <MESSAGE value=\"Updated structure and coded showboard\" />\r\n    <MESSAGE value=\"Finish showboard + updated Player\" />\r\n    <MESSAGE value=\"Handled numbers before command\" />\r\n    <MESSAGE value=\"Finished first sprint\" />\r\n    <MESSAGE value=\"Coded clear_board\" />\r\n    <MESSAGE value=\"Small changes\" />\r\n    <MESSAGE value=\"Finished Play method\" />\r\n    <MESSAGE value=\"Update files\" />\r\n    <MESSAGE value=\"Added new methods to the method play\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Added new methods to the method play\" />\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+---- a/.idea/workspace.xml	(revision 906faed3ab863b6d17cb19d81edcefbf10423204)
+-+++ b/.idea/workspace.xml	(date 1704292264980)
+-@@ -5,7 +5,10 @@
+-   </component>
+-   <component name="ChangeListManager">
+-     <list default="true" id="3d91ec27-cc2e-442d-ad90-c0d4a67c50e3" name="Changes" comment="Added new methods to the method play">
+--      <change beforePath="$PROJECT_DIR$/src/ihm/JeuDeGo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ihm/JeuDeGo.java" afterDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/go/Goban.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JeuDeGo/go/Goban.class" afterDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/go/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JeuDeGo/go/Player.class" afterDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/ihm/JeuDeGo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JeuDeGo/ihm/JeuDeGo.class" afterDir="false" />
+-     </list>
+-     <option name="SHOW_DIALOG" value="false" />
+-     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+-@@ -236,7 +239,15 @@
+-       <option name="project" value="LOCAL" />
+-       <updated>1704291080904</updated>
+-     </task>
+--    <option name="localTasksCounter" value="18" />
+-+    <task id="LOCAL-00018" summary="Added new methods to the method play">
+-+      <option name="closed" value="true" />
+-+      <created>1704291120385</created>
+-+      <option name="number" value="00018" />
+-+      <option name="presentableId" value="LOCAL-00018" />
+-+      <option name="project" value="LOCAL" />
+-+      <updated>1704291120385</updated>
+-+    </task>
+-+    <option name="localTasksCounter" value="19" />
+-     <servers />
+-   </component>
+-   <component name="TypeScriptGeneratedFilesManager">
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_15_31__Changes_.xml
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_15_31__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_15_31__Changes_.xml
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_15_31__Changes_.xml	(revision 5b7be0d36bae2e258496f34a2ca7e37d3400b2cd)
++++ /dev/null	(revision 5b7be0d36bae2e258496f34a2ca7e37d3400b2cd)
+@@ -1,19 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_03_01_2024_15_31_[Changes]" date="1704292306660" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_15_31_[Changes]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 03/01/2024 15:31 [Changes]" />
+-  <binary>
+-    <option name="BEFORE_PATH" value="out/production/JeuDeGo/ihm/JeuDeGo.class" />
+-    <option name="AFTER_PATH" value="out/production/JeuDeGo/ihm/JeuDeGo.class" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_15_31_[Changes]/JeuDeGo.class" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value="out/production/JeuDeGo/go/Player.class" />
+-    <option name="AFTER_PATH" value="out/production/JeuDeGo/go/Player.class" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_15_31_[Changes]/Player.class" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value="out/production/JeuDeGo/go/Goban.class" />
+-    <option name="AFTER_PATH" value="out/production/JeuDeGo/go/Goban.class" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_15_31_[Changes]/Goban.class" />
+-  </binary>
+-</changelist>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_18_05__Changes_.xml
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_18_05__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_18_05__Changes_.xml
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_18_05__Changes_.xml	(revision 5b7be0d36bae2e258496f34a2ca7e37d3400b2cd)
++++ /dev/null	(revision 5b7be0d36bae2e258496f34a2ca7e37d3400b2cd)
+@@ -1,19 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_03_01_2024_18_05_[Changes]" date="1704301568669" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_18_05_[Changes]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 03/01/2024 18:05 [Changes]" />
+-  <binary>
+-    <option name="BEFORE_PATH" value="out/production/JeuDeGo/ihm/JeuDeGo.class" />
+-    <option name="AFTER_PATH" value="out/production/JeuDeGo/ihm/JeuDeGo.class" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_18_05_[Changes]/JeuDeGo.class" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value="out/production/JeuDeGo/go/Player.class" />
+-    <option name="AFTER_PATH" value="out/production/JeuDeGo/go/Player.class" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_18_05_[Changes]/Player.class" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value="out/production/JeuDeGo/go/Goban.class" />
+-    <option name="AFTER_PATH" value="out/production/JeuDeGo/go/Goban.class" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_18_05_[Changes]/Goban.class" />
+-  </binary>
+-</changelist>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"3d91ec27-cc2e-442d-ad90-c0d4a67c50e3\" name=\"Changes\" comment=\"Displayed pass move\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/go/Goban.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/go/Goban.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/go/IPlayer.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/go/IPlayer.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Interface\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitToolBoxStore\">\r\n    <option name=\"projectConfigVersion\" value=\"5\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 2\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2YRcAbZcYvHZ3GRjuiwnYpJEv0b\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n    <option name=\"showMembers\" value=\"true\" />\r\n    <option name=\"showVisibilityIcons\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,\r\n    &quot;Application.HxH.executor&quot;: &quot;Run&quot;,\r\n    &quot;Application.HxR.executor&quot;: &quot;Run&quot;,\r\n    &quot;Application.JeuDeGo.executor&quot;: &quot;Run&quot;,\r\n    &quot;Application.RxR.executor&quot;: &quot;Run&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\r\n    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,\r\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/Freezo/Documents/Cours/BUT2/PeriodeB/QualiteDev/RenduSprint&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Freezo\\Documents\\Cours\\BUT2\\PeriodeB\\QualiteDev\\RenduSprint\\src\\go\" />\r\n      <recent name=\"C:\\Users\\Freezo\\Documents\\Cours\\BUT2\\PeriodeB\\QualiteDev\\RenduSprint\\src\\player\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Application.RxR\">\r\n    <configuration name=\"HxH\" type=\"Application\" factoryName=\"Application\" temporary=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"go.ihm.Main\" />\r\n      <module name=\"JeuDeGo\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\"0\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"player.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"HxR\" type=\"Application\" factoryName=\"Application\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"go.ihm.Main\" />\r\n      <module name=\"JeuDeGo\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\"1\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"RxR\" type=\"Application\" factoryName=\"Application\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"go.ihm.Main\" />\r\n      <module name=\"JeuDeGo\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\"2\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <list>\r\n      <item itemvalue=\"Application.HxR\" />\r\n      <item itemvalue=\"Application.RxR\" />\r\n      <item itemvalue=\"Application.HxH\" />\r\n    </list>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.HxH\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"jdk-17.0.9-corretto-17.0.9-f644763e9732-ebaef533\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"3d91ec27-cc2e-442d-ad90-c0d4a67c50e3\" name=\"Changes\" comment=\"\" />\r\n      <created>1700491693659</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1700491693659</updated>\r\n      <workItem from=\"1700491695388\" duration=\"2789000\" />\r\n      <workItem from=\"1700513269062\" duration=\"308000\" />\r\n      <workItem from=\"1700566258443\" duration=\"2321000\" />\r\n      <workItem from=\"1700571663772\" duration=\"3810000\" />\r\n      <workItem from=\"1700771234740\" duration=\"1970000\" />\r\n      <workItem from=\"1700773241060\" duration=\"3114000\" />\r\n      <workItem from=\"1700776406119\" duration=\"922000\" />\r\n      <workItem from=\"1700815808165\" duration=\"3440000\" />\r\n      <workItem from=\"1700827085642\" duration=\"40000\" />\r\n      <workItem from=\"1700827134845\" duration=\"150000\" />\r\n      <workItem from=\"1700827299716\" duration=\"1201000\" />\r\n      <workItem from=\"1701100548734\" duration=\"10000\" />\r\n      <workItem from=\"1701176302453\" duration=\"2538000\" />\r\n      <workItem from=\"1701180295399\" duration=\"641000\" />\r\n      <workItem from=\"1701436027769\" duration=\"5000\" />\r\n      <workItem from=\"1701782135250\" duration=\"814000\" />\r\n      <workItem from=\"1701783023148\" duration=\"6112000\" />\r\n      <workItem from=\"1701854573996\" duration=\"235000\" />\r\n      <workItem from=\"1703526924400\" duration=\"434000\" />\r\n      <workItem from=\"1703672787164\" duration=\"617000\" />\r\n      <workItem from=\"1703673427321\" duration=\"35000\" />\r\n      <workItem from=\"1703673473959\" duration=\"412000\" />\r\n      <workItem from=\"1703674040475\" duration=\"269000\" />\r\n      <workItem from=\"1703674339417\" duration=\"64000\" />\r\n      <workItem from=\"1703674404384\" duration=\"3663000\" />\r\n      <workItem from=\"1703884326202\" duration=\"80000\" />\r\n      <workItem from=\"1704278072166\" duration=\"7464000\" />\r\n      <workItem from=\"1704487093126\" duration=\"6394000\" />\r\n      <workItem from=\"1704809359791\" duration=\"1136000\" />\r\n      <workItem from=\"1704813620147\" duration=\"3000\" />\r\n      <workItem from=\"1704834419216\" duration=\"3485000\" />\r\n      <workItem from=\"1704838108400\" duration=\"68000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Initial commit\">\r\n      <created>1700491729525</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700491729525</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Initial commit\">\r\n      <created>1700491740280</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700491740280</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Coded boardsize\">\r\n      <created>1700501101664</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700501101664</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Coded boardsize\">\r\n      <created>1700501119814</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700501119814</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Updated structure and coded showboard\">\r\n      <created>1700577007684</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700577007684</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Finish showboard + updated Player\">\r\n      <created>1700777327183</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700777327183</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Finish showboard + updated Player\">\r\n      <created>1700815847777</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700815847777</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Handled numbers before command\">\r\n      <created>1700823904012</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700823904012</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Finished first sprint\">\r\n      <created>1701176689785</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1701176689785</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"Coded clear_board\">\r\n      <created>1701782905290</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1701782905290</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"Small changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703674482101</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703674482101</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"Finished Play method\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703704617785</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703704617785</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"Updated play method + main\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703876973300</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703876973300</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00014\" summary=\"Updated play method\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703877003794</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703877003794</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00015\" summary=\"Updated play method\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703883659541</created>\r\n      <option name=\"number\" value=\"00015\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703883659541</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00016\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704278332968</created>\r\n      <option name=\"number\" value=\"00016\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00016\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704278332968</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00017\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704278596647</created>\r\n      <option name=\"number\" value=\"00017\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00017\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704278596647</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00018\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704279556279</created>\r\n      <option name=\"number\" value=\"00018\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00018\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704279556279</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00019\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704282948073</created>\r\n      <option name=\"number\" value=\"00019\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00019\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704282948073</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00020\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704282970315</created>\r\n      <option name=\"number\" value=\"00020\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00020\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704282970315</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00021\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704284955988</created>\r\n      <option name=\"number\" value=\"00021\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00021\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704284955988</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00022\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704290061031</created>\r\n      <option name=\"number\" value=\"00022\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00022\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704290061031</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00023\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704290304364</created>\r\n      <option name=\"number\" value=\"00023\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00023\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704290304364</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00024\" summary=\"Minor changes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704290761352</created>\r\n      <option name=\"number\" value=\"00024\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00024\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704290761352</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00025\" summary=\"Coded getLiberties, started on catching stones\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704314522355</created>\r\n      <option name=\"number\" value=\"00025\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00025\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704314522355</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00026\" summary=\"Bugs fixed\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704316897096</created>\r\n      <option name=\"number\" value=\"00026\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00026\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704316897096</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00027\" summary=\"Stones can be caught\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704317966662</created>\r\n      <option name=\"number\" value=\"00027\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00027\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704317966662</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00028\" summary=\"Cleaned AI\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704320094131</created>\r\n      <option name=\"number\" value=\"00028\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00028\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704320094131</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00029\" summary=\"Updated AI\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704487162231</created>\r\n      <option name=\"number\" value=\"00029\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00029\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704487162231</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00030\" summary=\"New config\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704487666431</created>\r\n      <option name=\"number\" value=\"00030\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00030\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704487666431</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00031\" summary=\"Made AI automatic, fixed suicide logic\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704493384986</created>\r\n      <option name=\"number\" value=\"00031\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00031\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704493384986</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00032\" summary=\"Moved IPlayer to go package, moved player history to Goban, history now takes int[], reduced params of play() and fixed players\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704824008046</created>\r\n      <option name=\"number\" value=\"00032\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00032\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704824008046</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00033\" summary=\"Cleaned files\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704824159128</created>\r\n      <option name=\"number\" value=\"00033\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00033\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704824159128</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00034\" summary=\"Fixed liberties bug ?\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704830471729</created>\r\n      <option name=\"number\" value=\"00034\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00034\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704830471729</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00035\" summary=\"Fixed liberties bug ?\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704830489913</created>\r\n      <option name=\"number\" value=\"00035\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00035\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704830489913</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00036\" summary=\"Changed structure and added optional param\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704836449739</created>\r\n      <option name=\"number\" value=\"00036\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00036\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704836449739</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00037\" summary=\"Changed structure and added optional param\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704836468898</created>\r\n      <option name=\"number\" value=\"00037\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00037\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704836468898</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00038\" summary=\"Displayed pass move\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704837161360</created>\r\n      <option name=\"number\" value=\"00038\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00038\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704837161360</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"39\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n    <MESSAGE value=\"Initial commit\" />\r\n    <MESSAGE value=\"Coded boardsize\" />\r\n    <MESSAGE value=\"Updated structure and coded showboard\" />\r\n    <MESSAGE value=\"Finish showboard + updated Player\" />\r\n    <MESSAGE value=\"Handled numbers before command\" />\r\n    <MESSAGE value=\"Finished first sprint\" />\r\n    <MESSAGE value=\"Coded clear_board\" />\r\n    <MESSAGE value=\"Small changes\" />\r\n    <MESSAGE value=\"Finished Play method\" />\r\n    <MESSAGE value=\"Updated play method + main\" />\r\n    <MESSAGE value=\"Updated play method\" />\r\n    <MESSAGE value=\"Minor changes\" />\r\n    <MESSAGE value=\"Coded getLiberties, started on catching stones\" />\r\n    <MESSAGE value=\"Bugs fixed\" />\r\n    <MESSAGE value=\"Stones can be caught\" />\r\n    <MESSAGE value=\"Cleaned AI\" />\r\n    <MESSAGE value=\"Updated AI\" />\r\n    <MESSAGE value=\"New config\" />\r\n    <MESSAGE value=\"Made AI automatic, fixed suicide logic\" />\r\n    <MESSAGE value=\"Moved IPlayer to go package, moved player history to Goban, history now takes int[], reduced params of play() and fixed players\" />\r\n    <MESSAGE value=\"Cleaned files\" />\r\n    <MESSAGE value=\"Fixed liberties bug ?\" />\r\n    <MESSAGE value=\"Changed structure and added optional param\" />\r\n    <MESSAGE value=\"Displayed pass move\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Displayed pass move\" />\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 5b7be0d36bae2e258496f34a2ca7e37d3400b2cd)
++++ b/.idea/workspace.xml	(date 1704838922470)
+@@ -4,10 +4,8 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="3d91ec27-cc2e-442d-ad90-c0d4a67c50e3" name="Changes" comment="Displayed pass move">
++    <list default="true" id="3d91ec27-cc2e-442d-ad90-c0d4a67c50e3" name="Changes" comment="Cleaned imports">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/go/Goban.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/go/Goban.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/go/IPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/go/IPlayer.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -165,7 +163,7 @@
+       <workItem from="1704809359791" duration="1136000" />
+       <workItem from="1704813620147" duration="3000" />
+       <workItem from="1704834419216" duration="3485000" />
+-      <workItem from="1704838108400" duration="68000" />
++      <workItem from="1704838108400" duration="809000" />
+     </task>
+     <task id="LOCAL-00001" summary="Initial commit">
+       <created>1700491729525</created>
+@@ -461,7 +459,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1704837161360</updated>
+     </task>
+-    <option name="localTasksCounter" value="39" />
++    <task id="LOCAL-00039" summary="Cleaned imports">
++      <option name="closed" value="true" />
++      <created>1704838209491</created>
++      <option name="number" value="00039" />
++      <option name="presentableId" value="LOCAL-00039" />
++      <option name="project" value="LOCAL" />
++      <updated>1704838209491</updated>
++    </task>
++    <option name="localTasksCounter" value="40" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -504,7 +510,8 @@
+     <MESSAGE value="Fixed liberties bug ?" />
+     <MESSAGE value="Changed structure and added optional param" />
+     <MESSAGE value="Displayed pass move" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Displayed pass move" />
++    <MESSAGE value="Cleaned imports" />
++    <option name="LAST_COMMIT_MESSAGE" value="Cleaned imports" />
+   </component>
+   <component name="XSLT-Support.FileAssociations.UIState">
+     <expand />
