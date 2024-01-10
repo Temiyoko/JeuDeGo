@@ -4,23 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d91ec27-cc2e-442d-ad90-c0d4a67c50e3" name="Changes" comment="Changed structure and added optional param">
-      <change afterPath="$PROJECT_DIR$/src/Final.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_15_10__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_15_10__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_15_31__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_15_31__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_18_05__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_18_05__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_21_23__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_21_23__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_21_23__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_21_23__Changes_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_21_42__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_21_42__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_21_42__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_21_42__Changes_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_22_39__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_22_39__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_23_23__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_23_23__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_11_2023_22_54__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_11_2023_22_54__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_11_2023_23_09__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_11_2023_23_09__Changes_.xml" afterDir="false" />
+    <list default="true" id="3d91ec27-cc2e-442d-ad90-c0d4a67c50e3" name="Changes" comment="Displayed pass move">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JeuDeGo/player/AI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JeuDeGo/player/AI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/go/Goban.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/go/Goban.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/go/IPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/go/IPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/player/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,10 +67,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -180,10 +164,8 @@
       <workItem from="1704487093126" duration="6394000" />
       <workItem from="1704809359791" duration="1136000" />
       <workItem from="1704813620147" duration="3000" />
-      <workItem from="1704834419216" duration="2617000" />
-      <workItem from="1704838185724" duration="160000" />
-      <workItem from="1704838353524" duration="950000" />
-      <workItem from="1704872142371" duration="3112000" />
+      <workItem from="1704834419216" duration="3485000" />
+      <workItem from="1704838108400" duration="68000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1700491729525</created>
@@ -471,7 +453,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704836468898</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Displayed pass move">
+      <option name="closed" value="true" />
+      <created>1704837161360</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1704837161360</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -513,7 +503,8 @@
     <MESSAGE value="Cleaned files" />
     <MESSAGE value="Fixed liberties bug ?" />
     <MESSAGE value="Changed structure and added optional param" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed structure and added optional param" />
+    <MESSAGE value="Displayed pass move" />
+    <option name="LAST_COMMIT_MESSAGE" value="Displayed pass move" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
