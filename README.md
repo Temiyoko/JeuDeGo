@@ -1,4 +1,7 @@
 # Projet go - R3.04
+
+Note : 15/20
+
 Ce projet consiste à développer et tester un programme permettant de jouer une partie de go.
 
 Equipe, groupe 203 : 
