@@ -137,6 +137,7 @@ public class Main {
                 }
                 return p;
             }
+            passCount.put(p, 0);
             System.out.println("=" + id);
             return p;
 
